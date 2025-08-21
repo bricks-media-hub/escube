@@ -251,91 +251,150 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <style>
-      .hero-section {
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
-      }
+<style>
+  .hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
 
-      .swiper-slide {
-        height: 100vh;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+.swiper-slide {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-      .overlay {
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.55);
-        /* dark overlay */
-        z-index: 1;
-      }
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
 
-      .hero-content {
-        position: relative;
-        z-index: 2;
-        /* above overlay */
-        text-align: center;
-        color: #fff;
-        max-width: 90%;
-        margin: 0 auto;
-        animation: fadeInUp 1s ease-in-out;
-      }
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 90%;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease-in-out;
+}
 
-      .hero-content h3 {
-        white-space: nowrap;
-        /* keep single line */
-        font-size: clamp(1.8rem, 4vw, 3rem);
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
+/* Headings */
+.hero-content h3 {
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  white-space: normal; /* allow wrapping on smaller screens */
+}
 
-      .hero-content p {
-        white-space: nowrap;
-        /* keep single line */
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
-        color: #f1f1f1;
-        margin-bottom: 20px;
-      }
+/* Paragraph */
+.hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: #f1f1f1;
+  margin-bottom: 22px;
+  line-height: 1.5;
+  white-space: normal; /* allow wrapping */
+}
 
-      .btn-modern {
-        display: inline-block;
-        background: linear-gradient(135deg, #007bff, #00c6ff);
-        color: white;
-        padding: 14px 32px;
-        border-radius: 30px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1rem;
-        transition: 0.3s ease;
-        box-shadow: 0 5px 20px rgba(0, 123, 255, 0.4);
-      }
+/* Buttons */
+.btn-modern {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 123, 255, 0.4);
+}
 
-      .btn-modern:hover {
-        background: linear-gradient(135deg, #0056b3, #0096d6);
-        transform: scale(1.05);
-        box-shadow: 0 8px 25px rgba(0, 123, 255, 0.6);
-      }
+.btn-modern:hover {
+  background: linear-gradient(135deg, #0056b3, #0096d6);
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.6);
+}
 
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(40px);
-        }
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
+/* Swiper Controls */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  transition: 0.3s;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #4dd0e1 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet-active {
+  background: #4dd0e1 !important;
+  opacity: 1;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 991px) {
+  .hero-content h3 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  .btn-modern {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    height: 80vh; /* slightly shorter on small devices */
+  }
+  .swiper-slide {
+    height: 80vh;
+  }
+  .hero-content h3 {
+    font-size: 1.4rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .btn-modern {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* hide arrows on very small screens */
+  }
+}
+
+</style>
 
   </section>
   <!-- End Hero Section -->
@@ -845,9 +904,9 @@
       .readmore-btn:hover {
         border: 2px solid #4CBAEA;
         /* stays same */
-        color: #4CBAEA;
+        color: #fff;
         /* stays same */
-        background: transparent;
+        background: #4CBAEA;
         /* no effect */
       }
 
@@ -1654,16 +1713,16 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-01.jpg" class="img-fluid" alt="Sudha Murthy - Panini">
-              <div class="portfolio-info">
+              <div class="portfolio-info" id="portfolio-all-details" style="cursor: pointer;">
                 <h4>Sudha Murthy - Panini</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/projects/completed-01.jpg" class="portfolio-details-link"
+                  <a href="assets/img/projects/completed-01.jpg" class="portfolio-details-link" id="portfolio-all-details"
                     data-gallery="portfolioGallery" data-title="Sudha Murthy - Panini"
                     data-description="HVAC installation for the Panini building, providing efficient climate control solutions with energy-saving features."
                     data-category="Completed Project" data-date="January 2023" data-client="Sudha Murthy Foundation"
                     data-images='["assets/img/projects/completed-01.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1673,7 +1732,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-02.jpg" class="img-fluid" alt="Shantivana VIP Cottage">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>Shantivana VIP Cottage</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1682,7 +1741,7 @@
                     data-description="Luxury HVAC solutions for VIP cottages, ensuring optimal comfort with minimal environmental impact."
                     data-category="Completed Project" data-date="March 2023" data-client="Shantivana Resorts"
                     data-images='["assets/img/projects/completed-02.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1692,7 +1751,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-03.jpg" class="img-fluid" alt="BBMP Lady Curzon Hospital">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>BBMP Lady Curzon Hospital</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1701,7 +1760,7 @@
                     data-description="Medical-grade HVAC system installation for hospital facilities, meeting strict healthcare ventilation standards."
                     data-category="Completed Project" data-date="May 2023" data-client="BBMP Healthcare"
                     data-images='["assets/img/projects/completed-03.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1711,7 +1770,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-04.jpg" class="img-fluid" alt="TATA Cancer Hospital">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>TATA Cancer Hospital</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1720,7 +1779,7 @@
                     data-description="Specialized HVAC systems for cancer treatment facilities with HEPA filtration and precise climate control."
                     data-category="Completed Project" data-date="July 2022" data-client="TATA Memorial Hospital"
                     data-images='["assets/img/projects/completed-04.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1730,7 +1789,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-05.jpg" class="img-fluid" alt="AIKKMS - Trasi">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>AIKKMS - Trasi</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1739,7 +1798,7 @@
                     data-description="Custom HVAC solution for community center with focus on energy efficiency and sustainable design."
                     data-category="Completed Project" data-date="November 2022" data-client="AIKKMS"
                     data-images='["assets/img/projects/completed-05.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1749,7 +1808,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-06.jpg" class="img-fluid" alt="Sannidhi Block A, B & C">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>Sannidhi Block A, B & C</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1758,7 +1817,7 @@
                     data-description="Comprehensive HVAC installation for commercial complex with centralized cooling system."
                     data-category="Completed Project" data-date="February 2023" data-client="Sannidhi Developers"
                     data-images='["assets/img/projects/completed-06.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1768,7 +1827,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-07.jpg" class="img-fluid" alt="Infosys Science Foundation">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>Infosys Science Foundation</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1777,7 +1836,7 @@
                     data-description="Advanced climate control system for research facility with precise temperature and humidity regulation."
                     data-category="Completed Project" data-date="April 2023" data-client="Infosys Science Foundation"
                     data-images='["assets/img/projects/completed-07.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1787,7 +1846,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-08.jpg" class="img-fluid" alt="Sudha Murthy - Panini">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>Sudha Murthy - Panini</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1796,7 +1855,7 @@
                     data-description="Additional HVAC installation for Panini building expansion with enhanced energy efficiency features."
                     data-category="Completed Project" data-date="June 2023" data-client="Sudha Murthy Foundation"
                     data-images='["assets/img/projects/completed-08.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1806,7 +1865,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-09.jpg" class="img-fluid" alt="UHS Bagalkote">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>UHS Bagalkote</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1815,7 +1874,7 @@
                     data-description="Hospital HVAC system with specialized infection control features and air quality management."
                     data-category="Completed Project" data-date="August 2022" data-client="UHS Bagalkote"
                     data-images='["assets/img/projects/completed-09.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1826,7 +1885,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-10.jpg" class="img-fluid"
                 alt="Jinkushal Care & Cardiac Hospital, Thane">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>Jinkushal Care & Cardiac Hospital, Thane</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1835,7 +1894,7 @@
                     data-description="Specialized cardiac care facility HVAC with ultra-clean air systems for operating theaters."
                     data-category="Completed Project" data-date="October 2022" data-client="Jinkushal Healthcare"
                     data-images='["assets/img/projects/completed-10.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1845,7 +1904,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-11.jpg" class="img-fluid" alt="HDFC Legacy Centre, Thane">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>HDFC Legacy Centre, Thane</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1854,7 +1913,7 @@
                     data-description="Corporate office HVAC solution with smart building integration and energy monitoring systems."
                     data-category="Completed Project" data-date="December 2022" data-client="HDFC"
                     data-images='["assets/img/projects/completed-11.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1864,7 +1923,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-completed">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-12.jpg" class="img-fluid" alt="IIT Powai">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>IIT Powai</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1873,7 +1932,7 @@
                     data-description="Research laboratory HVAC with precise environmental control for sensitive experiments."
                     data-category="Completed Project" data-date="September 2022" data-client="IIT Bombay"
                     data-images='["assets/img/projects/completed-12.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1884,7 +1943,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/projects/completed-13.jpg" class="img-fluid"
                 alt="Infosys Foundation Yakshagana Kalaranga">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>Infosys Foundation Yakshagana Kalaranga</h4>
                 <p>Completed Project</p>
                 <div class="portfolio-links">
@@ -1893,7 +1952,7 @@
                     data-description="Cultural center HVAC with special attention to acoustic performance and audience comfort."
                     data-category="Completed Project" data-date="March 2023" data-client="Infosys Foundation"
                     data-images='["assets/img/projects/completed-13.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1904,7 +1963,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-ongoing">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/ongoing-01.jpg" class="img-fluid" alt="SDM Kshemavana Nelamangala">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>SDM Kshemavana Nelamangala</h4>
                 <p>On Going Project</p>
                 <div class="portfolio-links">
@@ -1913,7 +1972,7 @@
                     data-description="Large-scale HVAC installation for wellness center, featuring energy recovery ventilation systems."
                     data-category="On Going Project" data-date="Expected Completion: August 2023"
                     data-client="SDM Group" data-images='["assets/img/projects/ongoing-01.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1923,7 +1982,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-ongoing">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/ongoing-02.jpg" class="img-fluid" alt="SDM Kshemavana Nelamangala">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>SDM Kshemavana Nelamangala</h4>
                 <p>On Going Project</p>
                 <div class="portfolio-links">
@@ -1932,7 +1991,7 @@
                     data-description="Phase 2 implementation of HVAC systems with smart building integration for optimal climate control."
                     data-category="On Going Project" data-date="Expected Completion: September 2023"
                     data-client="SDM Group" data-images='["assets/img/projects/ongoing-02.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -1942,16 +2001,16 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-ongoing">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/ongoing-03.jpg" class="img-fluid" alt="Ongoing Project 3">
-              <div class="portfolio-info">
+              <div class="portfolio-info" style="cursor: pointer;">
                 <h4>Ongoing Project 2</h4>
                 <p>On Going Project</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/projects/ongoing-03.jpg" class="portfolio-details-link"
+                  <a href="assets/img/projects/ongoing-03.jpg" class="portfolio-details-link "
                     data-gallery="portfolioGallery" data-title="Ongoing Project 2"
                     data-description="Commercial HVAC installation with advanced air purification systems for enhanced indoor air quality."
                     data-category="On Going Project" data-date="Expected Completion: October 2023"
                     data-client="Confidential Client" data-images='["assets/img/projects/ongoing-03.jpg"]'>
-                    <i class="icofont-eye"></i>
+                    <i class="icofont-eye" style="color: white;"></i>
                   </a>
                 </div>
               </div>
@@ -2278,7 +2337,7 @@
 
         .slider-prev,
         .slider-next {
-          background: rgba(116, 182, 211, 0.7);
+          background: #4CBAEA;
           color: #fff;
           width: 50px;
           height: 50px;
@@ -4136,117 +4195,130 @@
     });
   </script>
   <!-- portfolio section/projects -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // ========== Portfolio Filtering ==========
-      const filterButtons = document.querySelectorAll("#portfolio-filters li");
-      const portfolioItems = document.querySelectorAll(".portfolio-item");
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // ========== Portfolio Filtering ==========
+    const filterButtons = document.querySelectorAll("#portfolio-flters li");
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-      filterButtons.forEach(button => {
-        button.addEventListener("click", () => {
-          // Remove active from all, add to clicked
-          filterButtons.forEach(btn => btn.classList.remove("filter-active"));
-          button.classList.add("filter-active");
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        filterButtons.forEach(btn => btn.classList.remove("filter-active"));
+        button.classList.add("filter-active");
 
-          const filterValue = button.dataset.filter;
-
-          portfolioItems.forEach(item => {
-            if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
-              item.style.display = "block";
-              setTimeout(() => {
-                item.style.opacity = "1";
-                item.style.transform = "scale(1)";
-              }, 50);
-            } else {
-              item.style.opacity = "0";
-              item.style.transform = "scale(0.9)";
-              setTimeout(() => {
-                item.style.display = "none";
-              }, 400);
-            }
-          });
+        const filterValue = button.dataset.filter;
+        portfolioItems.forEach(item => {
+          if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
+            item.style.display = "block";
+            setTimeout(() => {
+              item.style.opacity = "1";
+              item.style.transform = "scale(1)";
+            }, 50);
+          } else {
+            item.style.opacity = "0";
+            item.style.transform = "scale(0.9)";
+            setTimeout(() => {
+              item.style.display = "none";
+            }, 400);
+          }
         });
-      });
-
-      // ========== Portfolio Lightbox ==========
-      const lightbox = document.getElementById("portfolio-lightbox");
-      const closeBtn = lightbox.querySelector(".close-lightbox");
-      const prevBtn = lightbox.querySelector(".slider-prev");
-      const nextBtn = lightbox.querySelector(".slider-next");
-      const mainImage = document.getElementById("lightbox-main-image");
-
-      let lightboxImages = [];
-      let currentIndex = 0;
-
-      function updateLightboxImage() {
-        if (lightboxImages.length > 0) {
-          mainImage.src = lightboxImages[currentIndex];
-        }
-      }
-
-      document.querySelectorAll(".portfolio-details-link").forEach(link => {
-        link.addEventListener("click", e => {
-          e.preventDefault();
-
-          // Load images
-          lightboxImages = JSON.parse(link.getAttribute("data-images") || "[]");
-          currentIndex = 0;
-          updateLightboxImage();
-
-          // Fill project info
-          document.getElementById("lightbox-title").innerText = link.dataset.title || "";
-          document.getElementById("lightbox-description").innerText = link.dataset.description || "";
-          document.getElementById("lightbox-category").innerText = link.dataset.category || "";
-          document.getElementById("lightbox-date").innerText = link.dataset.date || "";
-          document.getElementById("lightbox-client").innerText = link.dataset.client || "";
-          document.getElementById("lightbox-category-full").innerText = link.dataset.category || "";
-          document.getElementById("lightbox-date-full").innerText = link.dataset.date || "";
-
-          // Show lightbox
-          lightbox.classList.add("active");
-          document.body.style.overflow = "hidden";
-        });
-      });
-
-      // Navigation
-      prevBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + lightboxImages.length) % lightboxImages.length;
-        updateLightboxImage();
-      });
-
-      nextBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % lightboxImages.length;
-        updateLightboxImage();
-      });
-
-      // Close lightbox
-      closeBtn.addEventListener("click", () => {
-        lightbox.classList.remove("active");
-        document.body.style.overflow = "auto";
-      });
-
-      // Close lightbox when clicked on outside the content
-      lightbox.addEventListener("click", (e) => {
-        if (e.target === lightbox) {
-          lightbox.classList.remove("active");
-          document.body.style.overflow = "auto";
-        }
-      })
-
-      // Keyboard controls
-      document.addEventListener("keydown", e => {
-        if (!lightbox.classList.contains("active")) return;
-
-        if (e.key === "Escape") {
-          lightbox.classList.remove("active");
-        } else if (e.key === "ArrowLeft") {
-          prevBtn.click();
-        } else if (e.key === "ArrowRight") {
-          nextBtn.click();
-        }
       });
     });
-  </script>
+
+    // ========== Portfolio Lightbox ==========
+    const lightbox = document.getElementById("portfolio-lightbox");
+    const closeBtn = lightbox.querySelector(".close-lightbox");
+    const prevBtn = lightbox.querySelector(".slider-prev");
+    const nextBtn = lightbox.querySelector(".slider-next");
+    const mainImage = document.getElementById("lightbox-main-image");
+
+    let lightboxImages = [];
+    let currentIndex = 0;
+
+    function updateLightboxImage() {
+      if (lightboxImages.length > 0) {
+        mainImage.src = lightboxImages[currentIndex];
+      }
+    }
+
+    // 🔑 Common function to open lightbox
+    function openLightbox(link) {
+      lightboxImages = JSON.parse(link.getAttribute("data-images") || "[]");
+      currentIndex = 0;
+      updateLightboxImage();
+
+      document.getElementById("lightbox-title").innerText = link.dataset.title || "";
+      document.getElementById("lightbox-description").innerText = link.dataset.description || "";
+      document.getElementById("lightbox-category").innerText = link.dataset.category || "";
+      document.getElementById("lightbox-date").innerText = link.dataset.date || "";
+      document.getElementById("lightbox-client").innerText = link.dataset.client || "";
+      document.getElementById("lightbox-category-full").innerText = link.dataset.category || "";
+      document.getElementById("lightbox-date-full").innerText = link.dataset.date || "";
+
+      lightbox.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    // Attach event for eye-icon links
+    document.querySelectorAll(".portfolio-details-link").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        openLightbox(link);
+      });
+
+      // Also allow clicking image & container
+      const portfolioWrap = link.closest(".portfolio-wrap");
+      if (portfolioWrap) {
+        portfolioWrap.addEventListener("click", e => {
+          // Prevent double trigger if eye-icon itself clicked
+          if (!e.target.closest(".portfolio-details-link")) {
+            e.preventDefault();
+            openLightbox(link);
+          }
+        });
+      }
+    });
+
+    // Navigation
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + lightboxImages.length) % lightboxImages.length;
+      updateLightboxImage();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % lightboxImages.length;
+      updateLightboxImage();
+    });
+
+    // Close lightbox
+    closeBtn.addEventListener("click", () => {
+      lightbox.classList.remove("active");
+      document.body.style.overflow = "auto";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+    });
+
+    // Keyboard controls
+    document.addEventListener("keydown", e => {
+      if (!lightbox.classList.contains("active")) return;
+      if (e.key === "Escape") {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "auto";
+      } else if (e.key === "ArrowLeft") {
+        prevBtn.click();
+      } else if (e.key === "ArrowRight") {
+        nextBtn.click();
+      }
+    });
+  });
+</script>
+
+
   <!-- contact us -->
   <script>
     function openGoogleMap(address) {
