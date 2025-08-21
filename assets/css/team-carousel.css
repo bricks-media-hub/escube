@@ -3,6 +3,11 @@
 	  font-family: 'Raleway', sans-serif;
 }
 .teams .shadow-effect {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 370px;
 		    background: #fff;
 		    padding: 20px;
 		    text-align: center;
@@ -10,18 +15,27 @@
 		    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
 		}
 		
-		#customers-teams .item {
-			 height:470px !important;
-		    text-align: center;
-		    padding: 50px;
-				margin-bottom:80px;
-		    opacity: .2;
-		    -webkit-transform: scale3d(0.8, 0.8, 1);
-		    transform: scale3d(0.8, 0.8, 1);
-		    -webkit-transition: all 0.3s ease-in-out;
-		    -moz-transition: all 0.3s ease-in-out;
-		    transition: all 0.3s ease-in-out;
-		}
+.shadow-effect.active.center{
+	min-height: 500px;
+}
+
+/* 🔹 All cards same static height */
+#customers-teams .item {
+    min-height: 470px;         /* static height */
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 80px;
+    opacity: 1;
+    transform: none;
+    transition: height 0.3s ease-in-out; /* smooth change */
+}
+
+/* 🔹 Center card slightly taller */
+#customers-teams .owl-item.active.center .item {
+    min-height: 220px;  /* little more */
+    z-index: 2;     /* make sure it’s above */
+}
+
 #customers-teams .item p{
 	font-size:12px;
 }
@@ -39,11 +53,11 @@
 	font-size:15px !important;
 	font-weight:700 !important;
 }
-		#customers-teams .owl-item.active.center .item {
+		/* #customers-teams .owl-item.active.center .item {
 		    opacity: 1;
 		    -webkit-transform: scale3d(1.0, 1.0, 1);
 		    transform: scale3d(1.0, 1.0, 1);
-		}
+		} */
 		.teams .owl-carousel .owl-item .img-circle {
 		    transform-style: preserve-3d;
 		    max-width: 170px;
@@ -66,22 +80,6 @@
 }
 #customers-teams.owl-carousel .owl-dots .owl-dot{
 	display: inline-block;
-}
-		#customers-teams.owl-carousel .owl-dots .owl-dot span {
-		    background: rgb(105 117 123);
-		    display: inline-block;
-		    height: 20px;
-		    margin: 0 2px 5px;
-			  margin-top:50px;
-		    transform: translate3d(0px, -50%, 0px) scale(0.3);
-		    transform-origin: 50% 50% 0;
-		    transition: all 250ms ease-out 0s;
-		    width: 20px;
-			  outline: none;
-				border-radius:50% !important;
-		}
-.owl-dot, .owl-dot:active, .owl-dot:focus { 
-	outline: 0 !important;
 }
 
 @media only screen and (max-width: 1000px){

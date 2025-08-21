@@ -684,9 +684,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
+/* section {
   padding: 60px 0;
-}
+} */
 
 .section-bg {
   background-color: #f5f9fc;
