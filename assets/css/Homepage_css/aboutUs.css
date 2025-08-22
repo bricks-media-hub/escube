@@ -1,0 +1,284 @@
+/* ---------- General Section ---------- */
+.about-section {
+  padding: clamp(70px, 8vw, 120px) 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+}
+
+.about-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(30px, 5vw, 60px);
+}
+
+/* ---------- Media ---------- */
+.about-media {
+  flex: 1;
+  min-width: 300px;
+}
+
+.media-container {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.media-container:hover .about-image {
+  transform: scale(1.05);
+}
+
+.play-button-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.play-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+}
+
+.play-icon {
+  width: 80px;
+  height: 80px;
+  background: #4CBAEA;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  box-shadow: 0 10px 30px rgba(116, 182, 211, 0.4);
+}
+
+.play-icon i {
+  font-size: 2rem;
+  margin-left: 5px;
+}
+
+.play-btn span {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* ---------- Content ---------- */
+.about-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-description p {
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+}
+
+/* ---------- CTA Buttons ---------- */
+.about-cta {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.cta-button {
+  padding: clamp(12px, 1.5vw, 16px) clamp(22px, 3vw, 32px);
+  border-radius: 50px;
+  background: #4CBAEA;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(116, 182, 211, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(116, 182, 211, 0.4);
+}
+
+.cta-button-secondary {
+  padding: clamp(12px, 1.5vw, 16px) clamp(22px, 3vw, 32px);
+  border: 2px solid #4CBAEA;
+  border-radius: 50px;
+  color: #4CBAEA;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button-secondary:hover {
+  background: #4CBAEA;
+  color: #fff;
+}
+
+/* ---------- Video Lightbox ---------- */
+.video-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.video-lightbox.active {
+  display: flex;
+}
+
+.video-lightbox-content {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.video-lightbox iframe {
+  width: 100%;
+  height: clamp(220px, 40vw, 500px);
+  display: block;
+}
+
+.video-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Large laptops/desktops */
+@media (max-width: 1200px) {
+  .about-image {
+    max-height: 450px;
+  }
+}
+
+/* Tablets */
+/* @media (max-width: 992px) {
+  .about-content-wrapper {
+    gap: 40px;
+  }
+  .about-image {
+    max-height: 400px;
+  }
+} */
+
+/* Mobiles */
+/* @media (max-width: 768px) {
+  .about-section {
+    padding: 70px 0;
+  }
+  .about-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-content {
+    text-align: center;
+  }
+  .about-cta {
+    justify-content: center;
+  }
+  .about-image {
+    max-height: 350px;
+  }
+  .video-lightbox iframe {
+    height: 300px;
+  }
+} */
+
+/* Small phones */
+@media (max-width: 992px) {
+  .about-media {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .align-l {
+    width: 100%;
+  }
+  .align-l h2,
+  .align-l h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-image {
+    max-height: 280px;
+  }
+  .play-icon {
+    width: 65px;
+    height: 65px;
+  }
+  .play-icon i {
+    font-size: 1.4rem;
+  }
+  .play-btn span {
+    font-size: 0.95rem;
+  }
+  .cta-button,
+  .cta-button-secondary {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+  .video-lightbox iframe {
+    height: 220px;
+  }
+}
+
+/* Ultra-wide Screens */
+@media (min-width: 1600px) {
+  .about-description p {
+    font-size: 1.15rem;
+  }
+  .play-icon {
+    width: 100px;
+    height: 100px;
+  }
+  .play-icon i {
+    font-size: 2.4rem;
+  }
+  .play-btn span {
+    font-size: 1.2rem;
+  }
+  .video-lightbox iframe {
+    max-height: 650px;
+  }
+}

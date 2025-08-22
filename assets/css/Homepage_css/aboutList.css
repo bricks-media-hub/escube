@@ -1,0 +1,86 @@
+
+      .about-lists {
+        background: #e6f0fa;
+        padding: 80px 0;
+      }
+
+      .content-card {
+        background: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        min-height: 320px;
+        /* 🔹 static height */
+      }
+
+      .content-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .card-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #007bff;
+        opacity: 0.15;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+
+      .content-card h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 15px;
+      }
+
+
+
+
+
+      .readmore-btn {
+        padding: 10px 20px;
+        border: 2px solid #4CBAEA;
+        /* proper border */
+        background: transparent;
+        /* no background */
+        color: #4CBAEA;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .readmore-btn:hover {
+        border: 2px solid #4CBAEA;
+        /* stays same */
+        color: #fff;
+        /* stays same */
+        background: #4CBAEA;
+        /* no effect */
+      }
+
+
+      /* ---------- Responsive ---------- */
+      @media (max-width: 768px) {
+        .content-card {
+          min-height: 280px;
+          margin-bottom: 20px;
+        }
+
+        .content-card h4 {
+          font-size: 1.3rem;
+        }
+
+        .card-text,
+        .card-list {
+          font-size: 0.95rem;
+        }
+      }

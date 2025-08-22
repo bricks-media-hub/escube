@@ -1,0 +1,274 @@
+
+        .quality-policy-section {
+          padding: 100px 0;
+          background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .section-header {
+          text-align: center;
+          margin-bottom: 60px;
+        }
+
+        .section-header h4 {
+          font-size: 1.2rem;
+          color: #4CBAEA;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 15px;
+        }
+
+        .section-header h2 {
+          font-size: 2.8rem;
+          font-weight: 300;
+          color: #2c3e50;
+          margin-bottom: 20px;
+          position: relative;
+          display: inline-block;
+        }
+
+        .section-header h2::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80px;
+          height: 3px;
+          background: linear-gradient(to right, #4CBAEA, #4CBAEA);
+        }
+
+        .policy-content {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+
+        .policy-card {
+          background: #fff;
+          border-radius: 15px;
+          padding: 40px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          transition: all 0.4s ease;
+          display: flex;
+          gap: 25px;
+          align-items: flex-start;
+        }
+
+        .policy-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .policy-icon {
+          width: 70px;
+          height: 70px;
+          background: linear-gradient(135deg, #4CBAEA, #4CBAEA);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          color: #fff;
+          font-size: 1.8rem;
+          box-shadow: 0 8px 20px rgba(116, 182, 211, 0.3);
+        }
+
+        .policy-text {
+          flex: 1;
+        }
+
+        .policy-text h4 {
+          font-size: 1.4rem;
+          color: #2c3e50;
+          margin-bottom: 15px;
+          font-weight: 600;
+        }
+
+        .policy-text p {
+          color: #6c757d;
+          line-height: 1.8;
+          margin-bottom: 20px;
+          font-size: 1.1rem;
+        }
+
+        .policy-text p:last-child {
+          margin-bottom: 0;
+        }
+
+        .policy-list {
+          list-style: none;
+          padding: 0;
+          margin: 20px 0 0 0;
+        }
+
+        .policy-list li {
+          color: #6c757d;
+          line-height: 1.8;
+          margin-bottom: 15px;
+          padding-left: 35px;
+          position: relative;
+          font-size: 1.05rem;
+        }
+
+        .policy-list li:last-child {
+          margin-bottom: 0;
+        }
+
+        .policy-list li i {
+          position: absolute;
+          left: 0;
+          top: 3px;
+          color: #4CBAEA;
+          font-size: 1.2rem;
+        }
+
+        .quality-cta {
+          text-align: center;
+          margin-top: 60px;
+          padding: 30px;
+          background: #fff;
+          border-radius: 15px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .quality-cta p {
+          font-size: 1.2rem;
+          color: #2c3e50;
+          margin-bottom: 20px;
+        }
+
+        .cta-button {
+          display: inline-block;
+          padding: 12px 30px;
+          background: linear-gradient(to right, #4CBAEA, #4CBAEA);
+          color: white;
+          border-radius: 50px;
+          text-decoration: none;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          border: none;
+          cursor: pointer;
+          box-shadow: 0 5px 15px rgba(116, 182, 211, 0.3);
+        }
+
+        .cta-button:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(116, 182, 211, 0.4);
+        }
+
+        /* Animation for policy cards */
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .policy-card {
+          animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .policy-card:nth-child(1) {
+          animation-delay: 0.1s;
+        }
+
+        .policy-card:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+
+        .policy-card:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+          .policy-card {
+            padding: 30px;
+            gap: 20px;
+          }
+
+          .policy-icon {
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .quality-policy-section {
+            padding: 70px 0;
+          }
+
+          .section-header h2 {
+            font-size: 2.2rem;
+          }
+
+          .policy-card {
+            flex-direction: column;
+            text-align: center;
+            padding: 25px;
+          }
+
+          .policy-icon {
+            margin: 0 auto;
+          }
+
+          .policy-list li {
+            padding-left: 30px;
+            text-align: left;
+          }
+
+          .quality-cta {
+            padding: 20px;
+          }
+
+          .quality-cta p {
+            font-size: 1.1rem;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .section-header h2 {
+            font-size: 2rem;
+          }
+
+          .policy-card {
+            padding: 20px;
+          }
+
+          .policy-text h4 {
+            font-size: 1.2rem;
+          }
+
+          .policy-text p {
+            font-size: 1rem;
+          }
+
+          .policy-list li {
+            font-size: 0.95rem;
+            padding-left: 25px;
+          }
+
+          .policy-list li i {
+            font-size: 1rem;
+            top: 4px;
+          }
+
+          .cta-button {
+            padding: 10px 25px;
+            font-size: 0.9rem;
+          }
+        }

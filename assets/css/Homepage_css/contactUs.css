@@ -1,0 +1,43 @@
+
+        .flexing-center {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        .office-card {
+          padding: 25px;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+          transition: all 0.3s ease;
+          height: 100%;
+          border: 1px solid transparent;
+        }
+
+        .office-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+          border-color: rgba(52, 152, 219, 0.2);
+        }
+
+        .office-card:hover .map-link i {
+          transform: translateX(5px);
+        }
+
+        .form-control:focus {
+          border-color: #3498db;
+          box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+        }
+
+        button:hover {
+          background: #2980b9 !important;
+          transform: translateY(-2px);
+          box-shadow: 0 7px 20px rgba(52, 152, 219, 0.4) !important;
+        }
+
+        .cgap {
+          margin-bottom: 30px;
+        }
