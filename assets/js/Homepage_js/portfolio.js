@@ -51,12 +51,12 @@
       updateLightboxImage();
 
       document.getElementById("lightbox-title").innerText = link.dataset.title || "";
-      document.getElementById("lightbox-description").innerText = link.dataset.description || "";
+      // document.getElementById("lightbox-description").innerText = link.dataset.description || "";
       document.getElementById("lightbox-category").innerText = link.dataset.category || "";
-      document.getElementById("lightbox-date").innerText = link.dataset.date || "";
+      // document.getElementById("lightbox-date").innerText = link.dataset.date || "";
       document.getElementById("lightbox-client").innerText = link.dataset.client || "";
       document.getElementById("lightbox-category-full").innerText = link.dataset.category || "";
-      document.getElementById("lightbox-date-full").innerText = link.dataset.date || "";
+      // document.getElementById("lightbox-date-full").innerText = link.dataset.date || "";
 
       lightbox.classList.add("active");
       document.body.style.overflow = "hidden";

@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,21 +26,21 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  
+
   <link href="assets/css/style-slick.css" rel="stylesheet">
 
-  
-  
+
+
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
+
   <!-- clients scroll start -->
-      <link rel="stylesheet" href="assets/css/owl.carousel.css" />
- <!--  clients scroll end -->
-  
+  <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+  <!--  clients scroll end -->
+
 
 
   <!-- =======================================================
@@ -48,8 +50,210 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Ruda:wght@700&family=Saira:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ruda:wght@700&family=Saira:wght@500&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+
+  <!-- CUSTOM CSS IMPORTS -->
+  <link rel="stylesheet" href="assets/css/Homepage_css/banner.css">
+  <link rel="stylesheet" href="assets/css/Homepage_css/services.css">
+  <style>
+    :root {
+      --primary: #0d47a1;
+      --primary-dark: #08306b;
+      --secondary: #0d47a1;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --gray: #6c757d;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    .enhanced-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .enhanced-section::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d47a1' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      z-index: 0;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .info-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .info-content {
+      padding: 30px;
+    }
+
+    .info-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      font-size: 28px;
+      box-shadow: 0 10px 20px rgba(13, 71, 161, 0.2);
+    }
+
+    .info-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--primary);
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+    .info-text {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--gray);
+      margin-bottom: 25px;
+    }
+
+    .info-image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .info-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .info-card:hover .info-image img {
+      transform: scale(1.05);
+    }
+
+    .info-image::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(13, 71, 161, 0.2), rgba(13, 71, 161, 0.4));
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .info-card:hover .info-image::after {
+      opacity: 1;
+    }
+
+    .badge {
+      background: var(--secondary);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    /* Animation for elements */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .delay-1 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-2 {
+      animation-delay: 0.4s;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .enhanced-section {
+        padding: 60px 0;
+      }
+
+      .info-content {
+        padding: 25px;
+      }
+
+      .info-title {
+        font-size: 1.6rem;
+      }
+
+      .info-image {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .info-title {
+        font-size: 1.5rem;
+      }
+
+      .info-text {
+        font-size: 1rem;
+      }
+
+      .info-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .enhanced-section {
+        padding: 40px 0;
+      }
+
+      .info-content {
+        padding: 20px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -64,8 +268,8 @@
       <div class="social-links float-right">
         <a href="https://twitter.com/Escube_india" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="https://www.facebook.com/escubeindia/" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/escubeindia/" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/escube-airconditioning-pvt-ltd/about/" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="https://www.instagram.com/escubeindia" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/escubeindia" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -75,15 +279,14 @@
     <div class="container">
 
       <div class="logo float-left">
-        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="140" height="84"></span></a></h5>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="100"
+                height="60"></span></a></h5>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block" id="home">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="drop-down"><a href="index.html#about">About</a>
+          <li class="drop-down"><a href="#about">About</a>
             <ul>
               <li><a href="company_profile.html">Company Profile</a></li>
               <li><a href="vision-mission.html">Vision and Mission</a></li>
@@ -92,15 +295,17 @@
               <li><a href="clients.html">Our Clients</a></li>
             </ul>
           </li>
-<!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
- -->          <li><a href="index.html#projects">Projects</a>
-<!--            <ul>
+          <!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
+ -->
+          <li><a href="#projects">Our Key Projects</a>
+            <!--            <ul>
               <li><a href="http://www.escubeindia.net/our-projects/">All Projects</a></li>
               <li><a href="http://www.escubeindia.net/completed/">Completed Projects</a></li>
               <li><a href="http://www.escubeindia.net/on-going/">On Going Projects</a></li>
             </ul>
- -->          </li>
-          <li class="drop-down"><a href="index.html#services">Services</a>
+ -->
+          </li>
+          <li class="drop-down"><a href="#services">Services</a>
             <ul>
               <li><a href="hvac-solutions.html">HVAC Solutions</a></li>
               <li><a href="comfort-air-conditioning.html">Comfort Air Conditioning</a></li>
@@ -110,17 +315,26 @@
               <li><a href="industrial-air-conditioning.html">Industrial Application</a></li>
             </ul>
           </li>
-                    <li><a href="#clients">Clients</a></li>
-              <li><a href="index.html#team">Team</a></li>
+          <li class="drop-down"><a href="#services">Gallery</a>
+            <ul>
+              <li><a href="gallery-alibagh.html">Alibagh</a></li>
+              <li><a href="gallery-bhandardara.html">Bhandardara</a></li>
+              <li><a href="gallery-goa.html">Goa</a></li>
+              <li><a href="gallery-udupi.html">Udupi</a></li>
+            </ul>
+          </li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#team">Team</a></li>
 
-          <li><a href="index.html#quality-policy">Quality Policy</a>
+
+          <li><a href="#quality-policy">Quality Policy</a>
           </li>
           <li class="drop-down"><a href="#">Career</a>
             <ul>
               <li><a href="career.html">Submit Resume Form</a></li>
             </ul>
           </li>
-          <li class="drop-down"><a href="index.html#contact">Contact</a>
+          <li class="drop-down"><a href="#contact">Contact</a>
             <ul>
               <li><a href="contact-01.html">General Inquiry & feedback</a></li>
               <li><a href="contact-02.html">Business Inquiry form</a></li>
@@ -131,107 +345,161 @@
       </nav><!-- .nav-menu -->
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero-01" style="height:400px;">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <section id="hero" class="hero-section" style="max-height: 400px;">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+        <!-- Slide 1 -->
+        <div class="swiper-slide" style="background-image: url('assets/img/slide/slide-6.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-content" style="margin-bottom: 10%;">
+            <h3>How We Work</h3>
+            <p>Escube Air Conditioning of India specializes in designing and delivering unique HVAC solutions for
+              industrial, pharmaceautical, comfort air cooling process heating.</p>
+          </div>
+        </div>
 
-        <div class="carousel-inner" role="listbox">
+        <!-- Slide 2 -->
 
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-6.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container" style="margin-bottom: 280px;">
-                <h1 class="animate__animated animate__fadeInDown head">How We Work</h1>
-          <p class="animate__animated animate__fadeInUp">Escube Air Conditioning of India specializes in designing and delivering unique HVAC solutions for industrial, pharmaceautical, comfort air cooling process heating.</p>
+        <!-- Slide 3 -->
 
+      </div>
+
+      <!-- Swiper Controls -->
+      <div class="swiper-pagination" style="color: white;"></div>
+      <div class="swiper-button-next" style="color: white;"></div>
+      <div class="swiper-button-prev" style="color: white;"></div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+
+  <main id="main">
+
+
+    <section class="enhanced-section">
+      <div class="container">
+        <div class="section-header">
+          <h4>How We Work</h4>
+          <p>Your trusted partner for complete air conditioning and ventilation services</p>
+        </div>
+
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+          <!-- card 1 -->
+          <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card">
+              <div class="icon-wrapper">
+                <a href="#">
+                  <img src="assets/img/vision-01.jpg" alt="...">
+                  <div class="icon-overlay"></div>
+                </a>
+              </div>
+              <div class="service-content">
+                <h4 class="title"><a href="https://escubeindia.net/ventilation-system.html"
+                    style="display: flex; justify-content: center;">Design Optimization</a></h4>
+                <p class="description">Escube Air Conditioning of India specializes in designing and delivering unique
+                  HVAC solutions for industrial, pharmaceautical, comfort air cooling process heating.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col-lg-4 col-md-6 service-item cgap-1" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card">
+              <div class="icon-wrapper">
+                <a href="#">
+                  <img src="assets/img/mission-01.jpg" alt="...">
+                  <div class="icon-overlay"></div>
+                </a>
+              </div>
+              <div class="service-content">
+                <h4 class="title"><a href="https://escubeindia.net/ventilation-system.html"
+                    style="display: flex; justify-content: center;">Project Managment</a></h4>
+                <p class="description">Our vast experience in the industries means that we are able to navigate the
+                  consents process quickly and cost effectively with timely delivery.</p>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col-lg-4 col-md-6 service-item cgap-2" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card">
+              <div class="icon-wrapper">
+                <a href="#">
+                  <img src="assets/img/strategy-01.jpg" alt="...">
+                  <div class="icon-overlay"></div>
+                </a>
+              </div>
+              <div class="service-content">
+                <h4 class="title"><a href="https://escubeindia.net/ventilation-system.html"
+                    style="display: flex; justify-content: center;">On Time Delivery</a></h4>
+                <p class="description">We have dedicated team who oversee all projects from start to completion. The
+                  onsite building foreman appointed to any project has responsibility to ensure everything during the
+                  construction stage runs smoothly, right down to the final nail.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Internal Section -->
+      <section style="margin-top: 50px;">
+        <div class="container">
+          <!-- Block 1 -->
+          <div class="row mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0 animate">
+              <div class="info-card h-100">
+                <div class="info-content">
+                  <h2 class="info-title">Safety First</h2>
+                  <p class="info-text">
+                    We're committed to total safety on site during project timeline. All of our employees and
+                    sub-contractors take part in site induction meetings about safety requirements and potential
+                    site-specific hazards.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 animate delay-1">
+              <div class="info-card h-100">
+                <div class="info-image">
+                  <img src="assets/img/services/services-safety-small.jpg" alt="Safety Commitment">
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Slide 2 -->
-          
-
-          <!-- Slide 3 -->
-          
-
+          <!-- Block 2 -->
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2 animate">
+              <div class="info-card h-100">
+                <div class="info-content">
+                  <h2 class="info-title">After Sales Service</h2>
+                  <p class="info-text">
+                    WESCUBE offer the highest level quality of post-installation maintenance and repairs services and
+                    has
+                    been awarded " Highest service quality award for ducted & non-ducted splits - 2022 "
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 animate delay-1">
+              <div class="info-card h-100">
+                <div class="info-image">
+                  <img src="assets/img/services/services-serviceTeam-small.jpg" alt="Service Team">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-  
-  <section class="how-we-work">
-      <div class="container">
-
-        <div class="how-we-work-title">
-          <h2 class="animate__animated animate__fadeInDown head">How We Work</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><a href="http://www.escubeindia.net/services/pharmaceautical-solution/"><img src="assets/img/services/services-p-solution-small.jpg"></a></div><br>
-
-            <h4 class="title crl"><a href="http://www.escubeindia.net/services/pharmaceautical-solution/">Design Optimization</a></h4>
-             <p class="description">Escube Air Conditioning of India specializes in designing and delivering unique HVAC solutions for industrial, pharmaceautical, comfort air cooling process heating.</p><br>
-
-
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><a href="http://www.escubeindia.net/services/comfort-air-conditioning/"><img src="assets/img/services/services-cac-small.jpg"></a></div><br>
-
-            <h4 class="title"><a href="http://www.escubeindia.net/services/comfort-air-conditioning/">Project Managment</a></h4>
-            <p class="description">Our vast experience in the industries means that we are able to navigate the consents process quickly and cost effectively with timely delivery.</p><br>
-
-
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><a href="#"><img src="assets/img/services/services-evaporating-small.jpg"></a></div><br>
-
-            <h4 class="title"><a href="">On Time Delivery</a></h4>
-            <p class="description">We have dedicated team who oversee all projects from start to completion. The onsite building foreman appointed to any project has responsibility to ensure everything during the construction stage runs smoothly, right down to the final nail.</p><br>
-
-          </div>
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><a href="#"><img src="assets/img/services/services-safety-small.jpg" width="450" height="269"></a></div><br>
-
-            <h4 class="title"><a href="">Safety First</a></h4>
-            <p class="description">We’re committed to total safety on site during project timeline. All of our employees and sub-contractors take part in site induction meetings about safety requirements and potential site-specific hazards.</p><br>
-
-          </div>
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><a href="#"><img src="assets/img/services/services-serviceTeam-small.jpg" width="450" height="269"></a></div><br>
-
-            <h4 class="title"><a href="">After Sales Service</a></h4>
-            <p class="description">WESCUBE offer the highest level quality of post-installation maintenance and repairs services and has been awarded " Highest service quality award for ducted &amp; non-ducted splits - 2022 "</p>
-            
-            <br>
-
-          </div>
-          
-        </div>
-
-      </div>
+      </section>
     </section>
-  
-  
-  
-  
-  
-  
-  
+
 
     <!-- ======= About Us Section ======= -->
     <!-- End About Us Section -->
-    
-    
+
+
 
     <!-- ======= About Lists Section ======= -->
     <!-- End About Lists Section -->
@@ -241,25 +509,25 @@
 
     <!-- ======= Services Section ======= -->
     <!-- End Services Section -->
-    
+
     <!-- ======= Testimonials Section ======= -->
 
-    
+
     <!-- ======= Testimonials Section End ======= -->
-    
+
     <!-- ======= Our Portfolio Section ======= -->
     <!-- End Our Portfolio Section -->
-    
-<!---clients scroll start-->
 
-    
-<!--- clients scroll end -->
-    
+    <!---clients scroll start-->
+
+
+    <!--- clients scroll end -->
+
     <!---clients start-->
-    
 
 
-  <!---clients end-->
+
+    <!---clients end-->
 
     <!-- ======= Our Team Section ======= -->
     <!-- End Our Team Section -->
@@ -282,7 +550,7 @@
             <h3><img src="assets/img/logo2.png" width="140" height="84"></h3>
             <p>B2/2, 8th Floor, Ashar IT Park,<br>
               Wagle Industrial Estate, Thane (W)
-<br><br>
+              <br><br>
               <strong>Phone:</strong> +91 22 2582 7851 / 53<br>
               <strong>Email:</strong> <a href="mailto:"></a><br>
             </p>
@@ -290,7 +558,8 @@
               <a href="https://twitter.com/Escube_india" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="https://www.facebook.com/escubeindia/" class="facebook"><i class="bx bxl-facebook"></i></a>
               <a href="https://www.instagram.com/escubeindia/" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/escube-airconditioning-pvt-ltd/about/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.linkedin.com/company/escube-airconditioning-pvt-ltd/about/" class="linkedin"><i
+                  class="bx bxl-linkedin"></i></a>
             </div>
           </div>
 
@@ -307,7 +576,7 @@
 
               <li><i class="bx bx-chevron-right"></i> <a href="index.html#quality-policy">Quality Policy</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="career.html">Career</a></li>
-			  <li><i class="bx bx-chevron-right"></i> <a href="blog/index.html">Blog</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="blog/index.html">Blog</a></li>
             </ul>
           </div>
 
@@ -315,16 +584,20 @@
             <h4>Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="hvac-solutions.html">HVAC Solutions</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="comfort-air-conditioning.html">Comfort Air Conditioning</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="pharmaceautical-solution.html">Pharmaceautical Solution</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="comfort-air-conditioning.html">Comfort Air
+                  Conditioning</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="pharmaceautical-solution.html">Pharmaceautical
+                  Solution</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="ventilation-system.html">Ventilation System</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="evaporative-cooling-system.html">Evaporative Cooling System</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="industrial-air-conditioning.html">Industrial Application</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="evaporative-cooling-system.html">Evaporative Cooling
+                  System</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="industrial-air-conditioning.html">Industrial
+                  Application</a></li>
 
             </ul>
           </div>
-          
-          
+
+
 
           <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
@@ -347,9 +620,9 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  
 
-  
+
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -363,26 +636,45 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
-  
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery.min.js"></script>
 
-  
-    <!-- clients scroll start -->
-  
-    <script src="assets/vendor/clients/jquery-2.2.4.min.js"></script>
+
+  <!-- clients scroll start -->
+
+  <script src="assets/vendor/clients/jquery-2.2.4.min.js"></script>
   <script src="assets/vendor/clients/superfish.min.js"></script>
   <script src="assets/vendor/clients/jquery.magnific-popup.min.js"></script>
   <script src="assets/vendor/clients/owl.carousel.min.js"></script>
   <script src="assets/vendor/clients/main.js"></script>
-  
+
   <!-- clients scroll end -->
-  
-  
+
+  <script>
+    // Simple animation on scroll
+    document.addEventListener('DOMContentLoaded', function () {
+      const animatedElements = document.querySelectorAll('.animate');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+          }
+        });
+      }, { threshold: 0.1 });
+
+      animatedElements.forEach(element => {
+        element.style.opacity = 0;
+        element.style.transition = 'opacity 0.8s ease';
+        observer.observe(element);
+      });
+    });
+  </script>
 
 
 </body>
