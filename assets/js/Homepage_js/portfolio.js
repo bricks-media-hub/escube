@@ -61,13 +61,14 @@
       lightbox.classList.add("active");
       document.body.style.overflow = "hidden";
     }
-
     // Attach event for eye-icon links
-    document.querySelectorAll(".portfolio-details-link").forEach(link => {
+
+      document.querySelectorAll(".portfolio-details-link").forEach(link => {
       link.addEventListener("click", e => {
         e.preventDefault();
         openLightbox(link);
-      });
+      })
+
 
       // Also allow clicking image & container
       const portfolioWrap = link.closest(".portfolio-wrap");
@@ -76,7 +77,7 @@
           // Prevent double trigger if eye-icon itself clicked
           if (!e.target.closest(".portfolio-details-link")) {
             e.preventDefault();
-            openLightbox(link);
+             (link);
           }
         });
       }

@@ -49,7 +49,14 @@
   ======================================================== -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@700&family=Saira:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- CUSTOM CSS IMPORTS -->
+  <link rel="stylesheet" href="assets/css/Homepage_css/banner.css">
+  <link rel="stylesheet" href="assets/css/Gallery_css/index.css">
+  <link rel="stylesheet" href="assets/css/Homepage_css/footer.css">
+  <link rel="stylesheet" href="assets/css/Clients_css/clients.css">
   
+
 </head>
 
 <body>
@@ -64,8 +71,8 @@
       <div class="social-links float-right">
         <a href="https://twitter.com/Escube_india" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="https://www.facebook.com/escubeindia/" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/escubeindia/" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/escube-airconditioning-pvt-ltd/about/" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="https://www.instagram.com/escubeindia" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/escubeindia" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -75,15 +82,14 @@
     <div class="container">
 
       <div class="logo float-left">
-        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="140" height="84"></span></a></h5>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="100"
+                height="60"></span></a></h5>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block" id="home">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="drop-down"><a href="index.html#about">About</a>
+          <li class="drop-down"><a href="#about">About</a>
             <ul>
               <li><a href="company_profile.html">Company Profile</a></li>
               <li><a href="vision-mission.html">Vision and Mission</a></li>
@@ -92,15 +98,17 @@
               <li><a href="clients.html">Our Clients</a></li>
             </ul>
           </li>
-<!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
- -->          <li><a class="section-scroll" href="index.html#projects">Our Key Projects</a>
-<!--            <ul>
+          <!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
+ -->
+          <li><a href="#projects">Our Key Projects</a>
+            <!--            <ul>
               <li><a href="http://www.escubeindia.net/our-projects/">All Projects</a></li>
               <li><a href="http://www.escubeindia.net/completed/">Completed Projects</a></li>
               <li><a href="http://www.escubeindia.net/on-going/">On Going Projects</a></li>
             </ul>
- -->          </li>
-          <li class="drop-down"><a href="index.html#services">Services</a>
+ -->
+          </li>
+          <li class="drop-down"><a href="#services">Services</a>
             <ul>
               <li><a href="hvac-solutions.html">HVAC Solutions</a></li>
               <li><a href="comfort-air-conditioning.html">Comfort Air Conditioning</a></li>
@@ -110,10 +118,19 @@
               <li><a href="industrial-air-conditioning.html">Industrial Application</a></li>
             </ul>
           </li>
-                    <li><a href="clients.html">Clients</a></li>
-                    <li><a href="index.html#team">Team</a></li>
+          <li class="drop-down"><a href="#services">Gallery</a>
+            <ul>
+              <li><a href="gallery-alibagh.html">Alibagh</a></li>
+              <li><a href="gallery-bhandardara.html">Bhandardara</a></li>
+              <li><a href="gallery-goa.html">Goa</a></li>
+              <li><a href="gallery-udupi.html">Udupi</a></li>
+            </ul>
+          </li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#team">Team</a></li>
 
-          <li><a href="index.html#quality-policy">Quality Policy</a>
+
+          <li><a href="#quality-policy">Quality Policy</a>
           </li>
           <li class="drop-down"><a href="#">Career</a>
             <ul>
@@ -131,233 +148,157 @@
       </nav><!-- .nav-menu -->
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero-01" style="height:400px;">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+    <!-- Banner Hero Section with Modern Swiper -->
+  <section id="hero" class="hero-section" style="max-height: 300px;">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
 
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-10.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container" style="margin-bottom: 280px;">
-                <h1 class="animate__animated animate__fadeInDown head">Our Clients</h1>
-              </div>
-            </div>
+        <!-- Slide 1 -->
+        <div class="swiper-slide" style="background-image: url('assets/img/slide/slide-10.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-content" style="margin-bottom: 20%;">
+            <h3>Our Clients</h3>
           </div>
-
-          <!-- Slide 2 -->
-          
-
-          <!-- Slide 3 -->
-          
-
         </div>
-
 
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero Section -->
 
   <main id="main">
-  
-  <section id="clients" class="clients section-bg clients-bgr">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="section-title">
-          <h4 class="crl">Our Awesome Partners</h4>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+<section class="enhanced-section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title text-center">
+            <h4 style="color: black;">Our Awesome Partners</h4>
+            <p>We're proud to collaborate with industry leaders and innovative companies. Our partnerships help us deliver exceptional solutions and drive mutual success in today's competitive marketplace.</p>
         </div>
 
-        
-
-        <div class="row clients-container">
-
-          <div class="col-lg-2 col-md-6 clients-item filter-app">
-            <div class="clients-wrap">
-            <img src="assets/clients/clients-01.jpg" class="img-fluid" alt=""> </div>
-          </div>
-
-
-          <div class="col-lg-2 col-md-6 clients-item filter-app">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-18.jpg" class="img-fluid" alt="">
+        <!-- Row 1 -->
+        <div class="row clients-container justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-01.jpg" class="img-fluid" alt="Partner 1">
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 clients-item filter-card">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-02.jpg" class="img-fluid" alt="">
-              
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-18.jpg" class="img-fluid" alt="Partner 2">
+                </div>
             </div>
-          </div>
-
-         
-
-          <div class="col-lg-2 col-md-6 clients-item filter-app">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-03.jpg" class="img-fluid" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-02.jpg" class="img-fluid" alt="Partner 3">
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 clients-item filter-card">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-04.jpg" class="img-fluid" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-03.jpg" class="img-fluid" alt="Partner 4">
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 clients-item filter-card">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-05.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-</div>
-
-
-        <div class="row clients-container">
-
-          <div class="col-lg-2 col-md-6 clients-item filter-app">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-06.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
-
-          <div class="col-lg-2 col-md-6 clients-item filter-app">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-07.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 clients-item filter-card">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-08.jpg" class="img-fluid" alt="">
-              
-            </div>
-          </div>
-
-         
-
-          <div class="col-lg-2 col-md-6 clients-item filter-app">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-09.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 clients-item filter-card">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-10.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 clients-item filter-card">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-11.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-</div>
-
-        <div class="row clients-container">
-
-          <div class="col-lg-2 col-md-6 clients-item filter-app">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-12.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
-
-          <div class="col-lg-2 col-md-6 clients-item filter-app">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-13.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 clients-item filter-card">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-14.jpg" class="img-fluid" alt="">
-              
-            </div>
-          </div>
-
-         
-
-          <div class="col-lg-2 col-md-6 clients-item filter-app">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-15.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 clients-item filter-card">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-16.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 clients-item filter-card">
-            <div class="clients-wrap">
-              <img src="assets/clients/clients-17.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-</div>
-
         </div>
-<span id="clients"></span>
-      </div>
-    </section>
-  
-  
-  
-  
-  
-  
-  
 
-    <!-- ======= About Us Section ======= -->
-    <!-- End About Us Section -->
-    
-    
+        <!-- Row 2 -->
+        <div class="row clients-container justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-04.jpg" class="img-fluid" alt="Partner 5">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-05.jpg" class="img-fluid" alt="Partner 6">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-06.jpg" class="img-fluid" alt="Partner 7">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-07.jpg" class="img-fluid" alt="Partner 8">
+                </div>
+            </div>
+        </div>
 
-    <!-- ======= About Lists Section ======= -->
-    <!-- End About Lists Section -->
+        <!-- Row 3 -->
+        <div class="row clients-container justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-08.jpg" class="img-fluid" alt="Partner 9">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-09.jpg" class="img-fluid" alt="Partner 10">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-10.jpg" class="img-fluid" alt="Partner 11">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-11.jpg" class="img-fluid" alt="Partner 12">
+                </div>
+            </div>
+        </div>
 
-    <!-- ======= Counts Section ======= -->
-    <!-- End Counts Section -->
+        <!-- Row 4 -->
+        <div class="row clients-container justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-12.jpg" class="img-fluid" alt="Partner 13">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-13.jpg" class="img-fluid" alt="Partner 14">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-14.jpg" class="img-fluid" alt="Partner 15">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-15.jpg" class="img-fluid" alt="Partner 16">
+                </div>
+            </div>
+        </div>
 
-    <!-- ======= Services Section ======= -->
-    <!-- End Services Section -->
-    
-    <!-- ======= Testimonials Section ======= -->
+        <!-- Row 5 -->
+        <div class="row clients-container justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-16.jpg" class="img-fluid" alt="Partner 17">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-6 clients-item">
+                <div class="clients-wrap">
+                    <img src="assets/clients/clients-17.jpg" class="img-fluid" alt="Partner 18">
+                </div>
+            </div>
+        </div>
 
-    
-    <!-- ======= Testimonials Section End ======= -->
-    
-    <!-- ======= Our Portfolio Section ======= -->
-    <!-- End Our Portfolio Section -->
-    
-<!---clients scroll start-->
-
-    
-<!--- clients scroll end -->
-    
-    <!---clients start-->
-    
+        <!-- <div class="text-center">
+            <a href="#" class="view-more-btn">View All Partners <i class="fas fa-arrow-right"></i></a>
+        </div> -->
+    </div>
+</section>
 
 
-  <!---clients end-->
 
-    <!-- ======= Our Team Section ======= -->
-    <!-- End Our Team Section -->
 
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <!-- End Frequently Asked Questions Section -->
 
-    <!-- ======= Contact Us Section ======= -->
-    <!-- End Contact Us Section -->
 
   </main><!-- End #main -->
 
@@ -450,6 +391,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
+
   
 
   <!-- Template Main JS File -->
@@ -468,9 +410,21 @@
   <script src="assets/vendor/clients/main.js"></script>
   
   <!-- clients scroll end -->
+    <!-- CUSTOM JS -->
+  <script src="./assets/js/Homepage_js/banner.js"></script>
+  <script src="./assets/js/Gallery_js/lightbox.js"></script>
+  <script src="./assets/js/Homepage_js/footer.js"></script>
   
-  
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        });
+    </script>
 
 </body>
 
