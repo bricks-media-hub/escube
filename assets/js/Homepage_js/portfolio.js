@@ -1,32 +1,32 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     // ========== Portfolio Filtering ==========
-    const filterButtons = document.querySelectorAll("#portfolio-flters li");
-    const portfolioItems = document.querySelectorAll(".portfolio-item");
+    // const filterButtons = document.querySelectorAll("#portfolio-flters li");
+    // const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-    filterButtons.forEach(button => {
-      button.addEventListener("click", () => {
-        filterButtons.forEach(btn => btn.classList.remove("filter-active"));
-        button.classList.add("filter-active");
+    // filterButtons.forEach(button => {
+    //   button.addEventListener("click", () => {
+    //     filterButtons.forEach(btn => btn.classList.remove("filter-active"));
+    //     button.classList.add("filter-active");
 
-        const filterValue = button.dataset.filter;
-        portfolioItems.forEach(item => {
-          if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
-            item.style.display = "block";
-            setTimeout(() => {
-              item.style.opacity = "1";
-              item.style.transform = "scale(1)";
-            }, 50);
-          } else {
-            item.style.opacity = "0";
-            item.style.transform = "scale(0.9)";
-            setTimeout(() => {
-              item.style.display = "none";
-            }, 400);
-          }
-        });
-      });
-    });
+    //     const filterValue = button.dataset.filter;
+    //     portfolioItems.forEach(item => {
+    //       if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
+    //         item.style.display = "block";
+    //         setTimeout(() => {
+    //           item.style.opacity = "1";
+    //           item.style.transform = "scale(1)";
+    //         }, 50);
+    //       } else {
+    //         item.style.opacity = "0";
+    //         item.style.transform = "scale(0.9)";
+    //         setTimeout(() => {
+    //           item.style.display = "none";
+    //         }, 400);
+    //       }
+    //     });
+    //   });
+    // });
 
     // ========== Portfolio Lightbox ==========
     const lightbox = document.getElementById("portfolio-lightbox");
