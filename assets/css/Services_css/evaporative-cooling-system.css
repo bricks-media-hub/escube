@@ -1,0 +1,177 @@
+        :root {
+            --primary: #0066cc;
+            --secondary: #2c3e50;
+            --accent: #00aaff;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --border-radius: 8px;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #444;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+        
+        .cooling-section {
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .cooling-section.light-bg {
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .cooling-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .cooling-row:last-child {
+            margin-bottom: 0;
+        }
+        
+        .cooling-img-container {
+            flex: 1;
+            min-width: 300px;
+            padding: 15px;
+            position: relative;
+        }
+        
+        .cooling-img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .cooling-img-container:hover .cooling-img {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .img-overlay {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            background: linear-gradient(45deg, rgba(0, 102, 204, 0.1) 0%, rgba(0, 170, 255, 0.05) 100%);
+            border-radius: var(--border-radius);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .cooling-img-container:hover .img-overlay {
+            opacity: 1;
+        }
+        
+        .cooling-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+        }
+        
+        .cooling-header {
+            margin-bottom: 25px;
+        }
+        
+        .cooling-title {
+            color: var(--secondary);
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        
+        .cooling-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .cooling-description {
+            color: #555;
+            line-height: 1.7;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .highlight-text {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .icon-badge {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            background: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            z-index: 2;
+            box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+            transition: var(--transition);
+        }
+        
+        .cooling-img-container:hover .icon-badge {
+            transform: scale(1.1);
+            background: var(--accent);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .cooling-row {
+                flex-direction: column;
+            }
+            
+            .cooling-img-container, .cooling-content {
+                width: 100%;
+                padding: 15px;
+            }
+            
+            .cooling-content {
+                padding-top: 30px;
+            }
+            
+            .reverse-on-mobile {
+                flex-direction: column-reverse;
+            }
+        }
+        
+        @media (min-width: 993px) {
+            .reverse-on-desktop {
+                flex-direction: row-reverse;
+            }
+        }

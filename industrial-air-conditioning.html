@@ -49,6 +49,10 @@
   ======================================================== -->
  <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@700&family=Saira:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+
+<!-- CUSTOM CSS -->
+ <link rel="stylesheet" href="assets/css/Homepage_css/banner.css">
+ <link rel="stylesheet" href="assets/css/Services_css/industrial-air-conditioning.css">
   
 </head>
 
@@ -64,8 +68,8 @@
       <div class="social-links float-right">
         <a href="https://twitter.com/Escube_india" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="https://www.facebook.com/escubeindia/" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/escubeindia/" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/escube-airconditioning-pvt-ltd/about/" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="https://www.instagram.com/escubeindia" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/escubeindia" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -75,15 +79,14 @@
     <div class="container">
 
       <div class="logo float-left">
-        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="140" height="84"></span></a></h5>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="100"
+                height="60"></span></a></h5>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block" id="home">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="drop-down"><a href="index.html#about">About</a>
+          <li class="drop-down"><a href="#about">About</a>
             <ul>
               <li><a href="company_profile.html">Company Profile</a></li>
               <li><a href="vision-mission.html">Vision and Mission</a></li>
@@ -92,15 +95,17 @@
               <li><a href="clients.html">Our Clients</a></li>
             </ul>
           </li>
-<!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
- -->          <li><a class="section-scroll" href="index.html#projects">Our Key Projects</a>
-<!--            <ul>
+          <!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
+ -->
+          <li><a href="#projects">Our Key Projects</a>
+            <!--            <ul>
               <li><a href="http://www.escubeindia.net/our-projects/">All Projects</a></li>
               <li><a href="http://www.escubeindia.net/completed/">Completed Projects</a></li>
               <li><a href="http://www.escubeindia.net/on-going/">On Going Projects</a></li>
             </ul>
- -->          </li>
-          <li class="drop-down"><a href="index.html#services">Services</a>
+ -->
+          </li>
+          <li class="drop-down"><a href="#services">Services</a>
             <ul>
               <li><a href="hvac-solutions.html">HVAC Solutions</a></li>
               <li><a href="comfort-air-conditioning.html">Comfort Air Conditioning</a></li>
@@ -110,10 +115,19 @@
               <li><a href="industrial-air-conditioning.html">Industrial Application</a></li>
             </ul>
           </li>
-                    <li><a href="clients.html">Clients</a></li>
-                    <li><a href="index.html#team">Team</a></li>
+          <li class="drop-down"><a href="#services">Gallery</a>
+            <ul>
+              <li><a href="gallery-alibagh.html">Alibagh</a></li>
+              <li><a href="gallery-bhandardara.html">Bhandardara</a></li>
+              <li><a href="gallery-goa.html">Goa</a></li>
+              <li><a href="gallery-udupi.html">Udupi</a></li>
+            </ul>
+          </li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#team">Team</a></li>
 
-          <li><a href="index.html#quality-policy">Quality Policy</a>
+
+          <li><a href="#quality-policy">Quality Policy</a>
           </li>
           <li class="drop-down"><a href="#">Career</a>
             <ul>
@@ -131,137 +145,95 @@
       </nav><!-- .nav-menu -->
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero-01" style="height:400px;">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <section id="hero" class="hero-section" style="max-height: 300px;">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-12.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container" style="margin-bottom: 280px;">
-                <h1 class="animate__animated animate__fadeInDown head">Industrial Cooling & Conditioning</h1>
-                <p class="animate__animated animate__fadeInUp">Industrial Cooling and Air Conditioning Services Mumbai | Escube Airconditioning Pvt Ltd.</p>
-              </div>
-            </div>
+        <!-- Slide 1 -->
+        <div class="swiper-slide" style="background-image: url('assets/img/slide/slide-12.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-content">
+            <h3>Industrial Cooling & Conditioning</h3>
+            <p>Industrial Cooling and Air Conditioning Services Mumbai | Escube Airconditioning Pvt Ltd.</p>
           </div>
-
-          <!-- Slide 2 -->
-          
-
-          <!-- Slide 3 -->
-          
-
         </div>
 
+        <!-- Slide 2 -->
+
+        <!-- Slide 3 -->
 
       </div>
+
+      <!-- Swiper Controls -->
+      <div class="swiper-pagination" style="color: white;"></div>
+      <div class="swiper-button-next" style="color: white;"></div>
+      <div class="swiper-button-prev" style="color: white;"></div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
+
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/services/services-09.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-
-            <div class="section-title" id="about">
-              <h2 class="service-havc">Industrial Application</h2>
-
-              <p>In Industrial applications, cooling can be critical to ensure that processes do not cause equipment or products to overheat. Many cooling applications use water as a medium to absorb heat, because water has a high boiling point and high specific heat. There are many different ways to set up an industrial cooling system, Escube Air Conditioning Pvt Ltd can help you select the optimum specification tailored to your application and provide the support which will enable you to manage your cooling system for best performance, maximum
-longevity and lower operating costs.<br><br>
-
-</p>
+<!-- ======= Industrial Application Section ======= -->
+<section id="industrial-application" class="industrial-section">
+    <div class="container">
+        <!-- First Row -->
+        <div class="industrial-row">
+            <div class="industrial-img-container">
+                <div class="">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <img src="assets/img/services/services-09.jpg" class="industrial-img" alt="Industrial Application">
+                <div class="img-overlay"></div>
             </div>
 
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div> -->
-            
-
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div> -->
-
-          </div>
+            <div class="industrial-content">
+                <div class="industrial-header">
+                    <h2 class="industrial-title">Industrial Application</h2>
+                    <p class="industrial-description">
+                        In Industrial applications, cooling can be critical to ensure that processes do not cause equipment or products to overheat. Many cooling applications use water as a medium to absorb heat, because water has a high boiling point and high specific heat.
+                    </p>
+                    <p class="industrial-description">
+                        There are many different ways to set up an industrial cooling system, Escube Air Conditioning Pvt Ltd can help you select the optimum specification tailored to your application and provide the support which will enable you to manage your cooling system for best performance, maximum longevity and lower operating costs.
+                    </p>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
 
-      </div>
-    </section><!-- End About Us Section -->
-    
-    
-
-    <!-- ======= About Lists Section ======= -->
-    
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row no-gutters">
-        <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-          
-          
-          
-          
-          
-          
-          
-
-            <div class="section-title" id="about">
-              <h2 class="service-havc">Industrial Cooling & Conditioning includes </h2>
-
-<p>• Process Cooling</p>
-<p>• Low Temperature Applications</p>
-<p>• Low Relativity (RH) Applications</p><br>
-
+<!-- ======= Industrial Cooling Section ======= -->
+<section id="industrial-cooling" class="industrial-section light-bg">
+    <div class="container">
+        <!-- Second Row -->
+        <div class="industrial-row reverse-on-desktop">
+            <div class="industrial-content">
+                <div class="industrial-header">
+                    <h2 class="industrial-title">Industrial Cooling & Conditioning includes</h2>
+                    
+                    <div class="applications-grid">
+                        <div class="application-item">Process Cooling</div>
+                        <div class="application-item">Low Temperature Applications</div>
+                        <div class="application-item">Low Relativity (RH) Applications</div>
+                    </div>
+                </div>
             </div>
 
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div> -->
-            
-
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div> -->
-
-          </div>
-        
-        
-        
-        
-        
-        
-        
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/services/services-10.jpg" class="img-fluid" alt="">
-          </div>
-
-          
+            <div class="industrial-img-container">
+                <div class="">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <img src="assets/img/services/services-10.jpg" class="industrial-img" alt="Industrial Cooling">
+                <div class="img-overlay"></div>
+            </div>
         </div>
-
-      </div>
-    </section>
+    </div>
+</section>
     
     
     <!-- End About Lists Section -->

@@ -49,6 +49,13 @@
   ======================================================== -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@700&family=Saira:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">  
+<!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+<!-- CUSTOM CSS -->
+ <link rel="stylesheet" href="assets/css/Homepage_css/banner.css">
+ <link rel="stylesheet" href="assets/css/Services_css/hvac-solutions.css">
   
 </head>
 
@@ -64,8 +71,8 @@
       <div class="social-links float-right">
         <a href="https://twitter.com/Escube_india" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="https://www.facebook.com/escubeindia/" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/escubeindia/" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/escube-airconditioning-pvt-ltd/about/" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="https://www.instagram.com/escubeindia" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/escubeindia" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -75,15 +82,14 @@
     <div class="container">
 
       <div class="logo float-left">
-        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="140" height="84"></span></a></h5>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="100"
+                height="60"></span></a></h5>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block" id="home">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="drop-down"><a href="index.html#about">About</a>
+          <li class="drop-down"><a href="#about">About</a>
             <ul>
               <li><a href="company_profile.html">Company Profile</a></li>
               <li><a href="vision-mission.html">Vision and Mission</a></li>
@@ -92,15 +98,17 @@
               <li><a href="clients.html">Our Clients</a></li>
             </ul>
           </li>
-<!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
- -->          <li><a class="section-scroll" href="index.html#projects">Our Key Projects</a>
-<!--            <ul>
+          <!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
+ -->
+          <li><a href="#projects">Our Key Projects</a>
+            <!--            <ul>
               <li><a href="http://www.escubeindia.net/our-projects/">All Projects</a></li>
               <li><a href="http://www.escubeindia.net/completed/">Completed Projects</a></li>
               <li><a href="http://www.escubeindia.net/on-going/">On Going Projects</a></li>
             </ul>
- -->          </li>
-          <li class="drop-down"><a href="index.html#services">Services</a>
+ -->
+          </li>
+          <li class="drop-down"><a href="#services">Services</a>
             <ul>
               <li><a href="hvac-solutions.html">HVAC Solutions</a></li>
               <li><a href="comfort-air-conditioning.html">Comfort Air Conditioning</a></li>
@@ -110,10 +118,19 @@
               <li><a href="industrial-air-conditioning.html">Industrial Application</a></li>
             </ul>
           </li>
-                    <li><a href="clients.html">Clients</a></li>
-                    <li><a href="index.html#team">Team</a></li>
+          <li class="drop-down"><a href="#services">Gallery</a>
+            <ul>
+              <li><a href="gallery-alibagh.html">Alibagh</a></li>
+              <li><a href="gallery-bhandardara.html">Bhandardara</a></li>
+              <li><a href="gallery-goa.html">Goa</a></li>
+              <li><a href="gallery-udupi.html">Udupi</a></li>
+            </ul>
+          </li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#team">Team</a></li>
 
-          <li><a href="index.html#quality-policy">Quality Policy</a>
+
+          <li><a href="#quality-policy">Quality Policy</a>
           </li>
           <li class="drop-down"><a href="#">Career</a>
             <ul>
@@ -131,138 +148,117 @@
       </nav><!-- .nav-menu -->
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero-01" style="height:400px;">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <section id="hero" class="hero-section" style="max-height: 300px;">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-7.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container" style="margin-bottom: 280px;">
-                <h1 class="animate__animated animate__fadeInDown head">HVAC Solutions</h1>
-                <p class="animate__animated animate__fadeInUp">HVAC System and Solutions, AC Maintenance Services Mumbai | Escube Airconditioning Pvt Ltd.</p>
-              </div>
-            </div>
+        <!-- Slide 1 -->
+        <div class="swiper-slide" style="background-image: url('assets/img/slide/slide-7.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-content">
+            <h3>HVAC Solutions</h3>
+            <p>HVAC System and Solutions, AC Maintenance Services Mumbai | Escube Airconditioning Pvt Ltd.</p>
           </div>
-
-          <!-- Slide 2 -->
-          
-
-          <!-- Slide 3 -->
-          
-
         </div>
 
+        <!-- Slide 2 -->
+
+        <!-- Slide 3 -->
 
       </div>
+
+      <!-- Swiper Controls -->
+      <div class="swiper-pagination" style="color: white;"></div>
+      <div class="swiper-button-next" style="color: white;"></div>
+      <div class="swiper-button-prev" style="color: white;"></div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/services/services-01.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-
-            <div class="section-title" id="about">
-              <h2 class="service-havc">HVAC Solutions</h2>
-
-              <p>Escube strongly believes about giving end-to-end solution to customers, keeping this in mind Escube also provides maintenance service for products installed at client place. We also cater as a separate service division to any Air-conditioning problems or maintenance.</p>
-
-<p>A strong on-field technical team takes care of Escube service, where we offer onsite visit, problem identification, rectification and also annual maintenance contract. Escube strives to provide a total package for all the needs of the HVAC requirements of our customers all over the India.<br><br>
-
-</p>
+<!-- ======= HVAC Solutions Section ======= -->
+<section id="hvac-solutions" class="hvac-section">
+    <div class="container">
+        <!-- First Row -->
+        <div class="hvac-row">
+            <div class="hvac-img-container">
+                <div class="icon-badge">
+                    <i class="fa fa-fan"></i>
+                </div>
+                <img src="assets/img/services/services-01.jpg" class="hvac-img" alt="HVAC Solutions">
+                <div class="img-overlay"></div>
             </div>
 
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div> -->
-            
-
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div> -->
-
-          </div>
+            <div class="hvac-content">
+                <div class="hvac-header">
+                    <h2 class="hvac-title">HVAC Solutions</h2>
+                    <p class="hvac-description">
+                        <span class="highlight-text">Escube</span> strongly believes in providing end-to-end solutions to customers. 
+                        Along with installations, we offer maintenance services for all HVAC products. 
+                    </p>
+                    <p class="hvac-description">
+                        Our skilled technical team provides on-site visits, problem identification, 
+                        rectification, and annual maintenance contracts — delivering a complete package 
+                        for HVAC requirements across India.
+                    </p>
+                </div>
+                
+                <ul class="feature-list">
+                    <li>Professional installation services</li>
+                    <li>Comprehensive maintenance plans</li>
+                    <li>Nationwide technical support</li>
+                    <li>Customized HVAC solutions</li>
+                </ul>
+            </div>
         </div>
+    </div>
+</section>
 
-      </div>
-    </section><!-- End About Us Section -->
-    
-    
-
-    <!-- ======= About Lists Section ======= -->
-    
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row no-gutters">
-        <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-          
-          
-          
-          
-          
-          
-          
-
-            <div class="section-title" id="about">
-              <h2 class="service-havc">What is HVAC Systems ?</h2>
-
-              <p> HVAC stands for Heating, Ventilating, and Air Conditioning, and HVAC systems are, effectively, everything from your air conditioner at home to the large systems used in industrial complexes and apartment blocks. A good HVAC system aims to provide thermal control and indoor comfort, and one that is designed using the principles of thermodynamics, fluid mechanics, and heat transfer.</p><br>
-
-<p>The big air conditioner boxes that you might see on top of apartment blocks or offices are examples of (the visible part of) HVAC systems. They’re typically deployed in large industrial buildings, skyscrapers, apartment blocks, and large interior environments. They’re also an essential component of environments where there are health regulations requiring that temperature and humidity be kept at certain levels, using air taken from outside.</p><br>
-
+<!-- ======= HVAC Info Section ======= -->
+<section id="hvac-info" class="hvac-section light-bg">
+    <div class="container">
+        <!-- Second Row -->
+        <div class="hvac-row reverse-on-desktop">
+            <div class="hvac-img-container">
+                <div class="icon-badge">
+                    <i class="fas fa-building"></i>
+                </div>
+                <img src="assets/img/services/services-02.jpg" class="hvac-img" alt="About HVAC">
+                <div class="img-overlay"></div>
             </div>
 
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div> -->
-            
-
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div> -->
-
-          </div>
-        
-        
-        
-        
-        
-        
-        
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/services/services-02.jpg" class="img-fluid" alt="">
-          </div>
-
-          
+            <div class="hvac-content">
+                <div class="hvac-header">
+                    <h2 class="hvac-title">What is HVAC Systems?</h2>
+                    <p class="hvac-description">
+                        <span class="highlight-text">HVAC</span> stands for Heating, Ventilating, and Air Conditioning. It covers everything 
+                        from home air conditioners to large industrial systems. A well-designed HVAC setup 
+                        ensures thermal control and indoor comfort using principles of thermodynamics, 
+                        fluid mechanics, and heat transfer.
+                    </p>
+                    <p class="hvac-description">
+                        You'll often see big AC boxes on rooftops of buildings—these are part of HVAC systems. 
+                        They're vital in industrial complexes, skyscrapers, and regulated environments where 
+                        temperature and humidity must be controlled.
+                    </p>
+                </div>
+                
+                <ul class="feature-list">
+                    <li>Heating systems for colder climates</li>
+                    <li>Ventilation for air quality control</li>
+                    <li>Air conditioning for temperature regulation</li>
+                    <li>Custom solutions for various environments</li>
+                </ul>
+            </div>
         </div>
+    </div>
+</section>
 
-      </div>
-    </section>
     
     
     <!-- End About Lists Section -->
@@ -413,7 +409,29 @@
   
   <!-- clients scroll end -->
   
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/Homepage_js/banner.js"></script>
+<script>
+    // Simple AOS implementation
+    document.addEventListener('DOMContentLoaded', function() {
+        const aosElements = document.querySelectorAll('[data-aos]');
+        
+        function checkAOS() {
+            aosElements.forEach(element => {
+                const position = element.getBoundingClientRect();
+                
+                // If element is in viewport
+                if(position.top < window.innerHeight * 0.9 && position.bottom >= 0) {
+                    element.classList.add('aos-animate');
+                }
+            });
+        }
+        
+        // Check on load and scroll
+        checkAOS();
+        window.addEventListener('scroll', checkAOS);
+    });
+</script>
 
 
 </body>

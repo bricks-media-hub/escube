@@ -49,6 +49,10 @@
   ======================================================== -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@700&family=Saira:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<!-- CUSTOM CSS -->
+ <link rel="stylesheet" href="assets/css/Homepage_css/banner.css">
+ <link rel="stylesheet" href="assets/css/Services_css/comfort-air-conditioning.css">
   
 </head>
 
@@ -64,8 +68,8 @@
       <div class="social-links float-right">
         <a href="https://twitter.com/Escube_india" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="https://www.facebook.com/escubeindia/" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/escubeindia/" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/escube-airconditioning-pvt-ltd/about/" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="https://www.instagram.com/escubeindia" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/escubeindia" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -75,15 +79,14 @@
     <div class="container">
 
       <div class="logo float-left">
-        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="140" height="84"></span></a></h5>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="100"
+                height="60"></span></a></h5>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block" id="home">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="drop-down"><a href="index.html#about">About</a>
+          <li class="drop-down"><a href="#about">About</a>
             <ul>
               <li><a href="company_profile.html">Company Profile</a></li>
               <li><a href="vision-mission.html">Vision and Mission</a></li>
@@ -92,15 +95,17 @@
               <li><a href="clients.html">Our Clients</a></li>
             </ul>
           </li>
-<!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
- -->          <li><a class="section-scroll" href="index.html#projects">Our Key Projects</a>
-<!--            <ul>
+          <!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
+ -->
+          <li><a href="#projects">Our Key Projects</a>
+            <!--            <ul>
               <li><a href="http://www.escubeindia.net/our-projects/">All Projects</a></li>
               <li><a href="http://www.escubeindia.net/completed/">Completed Projects</a></li>
               <li><a href="http://www.escubeindia.net/on-going/">On Going Projects</a></li>
             </ul>
- -->          </li>
-          <li class="drop-down"><a href="index.html#services">Services</a>
+ -->
+          </li>
+          <li class="drop-down"><a href="#services">Services</a>
             <ul>
               <li><a href="hvac-solutions.html">HVAC Solutions</a></li>
               <li><a href="comfort-air-conditioning.html">Comfort Air Conditioning</a></li>
@@ -110,10 +115,19 @@
               <li><a href="industrial-air-conditioning.html">Industrial Application</a></li>
             </ul>
           </li>
-                    <li><a href="clients.html">Clients</a></li>
-                    <li><a href="index.html#team">Team</a></li>
+          <li class="drop-down"><a href="#services">Gallery</a>
+            <ul>
+              <li><a href="gallery-alibagh.html">Alibagh</a></li>
+              <li><a href="gallery-bhandardara.html">Bhandardara</a></li>
+              <li><a href="gallery-goa.html">Goa</a></li>
+              <li><a href="gallery-udupi.html">Udupi</a></li>
+            </ul>
+          </li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#team">Team</a></li>
 
-          <li><a href="index.html#quality-policy">Quality Policy</a>
+
+          <li><a href="#quality-policy">Quality Policy</a>
           </li>
           <li class="drop-down"><a href="#">Career</a>
             <ul>
@@ -131,149 +145,91 @@
       </nav><!-- .nav-menu -->
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero-01" style="height:400px;">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <section id="hero" class="hero-section" style="max-height: 300px;">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-9.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container" style="margin-bottom: 280px;">
-                <h1 class="animate__animated animate__fadeInDown head">Comfort Air Conditioning</h1>
-                <p class="animate__animated animate__fadeInUp">Comfort Air Conditioning System and Solutions in Mumbai | Escube Airconditioning Pvt Ltd.</p>
-              </div>
-            </div>
+        <!-- Slide 1 -->
+        <div class="swiper-slide" style="background-image: url('assets/img/slide/slide-9.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-content">
+            <h3>Comfort Air Conditioning</h3>
+            <p>Comfort Air Conditioning System and Solutions in Mumbai | Escube Airconditioning Pvt Ltd.</p>
           </div>
-
-          <!-- Slide 2 -->
-          
-
-          <!-- Slide 3 -->
-          
-
         </div>
 
+        <!-- Slide 2 -->
+
+        <!-- Slide 3 -->
 
       </div>
+
+      <!-- Swiper Controls -->
+      <div class="swiper-pagination" style="color: white;"></div>
+      <div class="swiper-button-next" style="color: white;"></div>
+      <div class="swiper-button-prev" style="color: white;"></div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
+
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+<!-- ======= Comfort AC Section ======= -->
+<section id="comfort-ac" class="comfort-ac-section">
+  <div class="container">
 
-        <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/services/comfort-ac-01.jpg" class="img-fluid" alt="">
-          </div>
+    <!-- First Content Block -->
+    <div class="comfort-row">
+      <div class="comfort-img-container">
+        <img src="assets/img/services/comfort-ac-01.jpg" class="comfort-img" alt="Comfort Air Conditioning System">
+      </div>
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+      <div class="comfort-content">
+        <div class="comfort-header">
+          <h2 class="comfort-title">Comfort Air Conditioning</h2>
+          <div class="title-divider"></div>
+          <p class="comfort-description">
+            Escube strongly believes in giving end-to-end solutions to customers. With this in mind, we provide comprehensive maintenance services for products installed at client locations. We also offer a separate service division dedicated to addressing any air conditioning problems or maintenance needs.
+          </p>
+        </div>
+      </div>
+    </div>
 
-            <div class="section-title" id="about">
-              <h2 class="service-havc">Comfort Air Conditioning</h2>
-
-              <p>Escube strongly believes about giving end-to-end solution to customers, keeping this in mind Escube also provides maintenance service for products installed at client place. We also cater as a separate service division to any Air-conditioning problems or maintenance.<br><br>
-
-</p>
-            </div>
-
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div> -->
-            
-
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div> -->
-
+    <!-- Second Content Block -->
+    <div class="comfort-row reversed">
+      <div class="comfort-content">
+        <div class="comfort-header">
+          <h2 class="comfort-title">Comfort Air Conditioning Includes:</h2>
+          <div class="title-divider"></div>
+          <div class="applications-grid">
+            <div class="application-item">Residential Air Conditioning</div>
+            <div class="application-item">Office Air Conditioning</div>
+            <div class="application-item">Commercial Centers</div>
+            <div class="application-item">Call Centers</div>
+            <div class="application-item">Shopping Malls & Retail Outlets</div>
+            <div class="application-item">Multiplex Theatres</div>
+            <div class="application-item">Recording Studios</div>
+            <div class="application-item">Hotels & Club Houses</div>
+            <div class="application-item">Banks & Financial Institutes</div>
+            <div class="application-item">Marriage Hall & Community Centers</div>
+            <div class="application-item">School & Colleges</div>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Us Section -->
-    
-    
 
-    <!-- ======= About Lists Section ======= -->
-    
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row no-gutters">
-        <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-          
-          
-          
-          
-          
-          
-          
-
-            <div class="section-title" id="about">
-              <h2 class="service-havc">Comfort Air Conditioning includes :</h2>
-
-              <p>• Residential Air Conditioning</p>
-<p>• Office Air Conditioning </p>
-<p>• Commercial Centers</p>
-<p>• Call Centers</p>
-<p>• Shopping Malls & Retail</p>
-<p>• Outlets</p>
-<p>• Multiplex Theatres</p>
-<p>• Recording Studios</p>
-<p>• Hotels & Club Houses</p>
-<p>• Banks & Financial Institutes</p>
-<p>• Marriage Hall & Community</p>
-<p>• Centers</p>
-<p>• School & colleges</p><br>
-
-            </div>
-
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div> -->
-            
-
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div> -->
-
-          </div>
-        
-        
-        
-        
-        
-        
-        
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/services/services-04.jpg" class="img-fluid" alt="">
-          </div>
-
-          
-        </div>
-
+      <div class="comfort-img-container">
+        <img src="assets/img/services/services-04.jpg" class="comfort-img" alt="Comfort AC Applications">
       </div>
-    </section>
-    
-    
-    <!-- End About Lists Section -->
+    </div>
+
+  </div>
+</section><!-- End Comfort AC Section -->
+
 
     <!-- ======= Counts Section ======= -->
     <!-- End Counts Section -->

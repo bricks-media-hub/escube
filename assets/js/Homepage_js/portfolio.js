@@ -77,7 +77,7 @@
           // Prevent double trigger if eye-icon itself clicked
           if (!e.target.closest(".portfolio-details-link")) {
             e.preventDefault();
-             (link);
+             openLightbox(link);
           }
         });
       }

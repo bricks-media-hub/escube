@@ -49,6 +49,9 @@
   ======================================================== -->
  <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@700&family=Saira:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+<!-- CUSTOM CSS -->
+ <link rel="stylesheet" href="assets/css/Homepage_css/banner.css">
+ <link rel="stylesheet" href="assets/css/Services_css/ventilation-system.css">
   
 </head>
 
@@ -64,8 +67,8 @@
       <div class="social-links float-right">
         <a href="https://twitter.com/Escube_india" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="https://www.facebook.com/escubeindia/" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/escubeindia/" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/escube-airconditioning-pvt-ltd/about/" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="https://www.instagram.com/escubeindia" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/escubeindia" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -75,15 +78,14 @@
     <div class="container">
 
       <div class="logo float-left">
-        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="140" height="84"></span></a></h5>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="100"
+                height="60"></span></a></h5>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block" id="home">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="drop-down"><a href="index.html#about">About</a>
+          <li class="drop-down"><a href="#about">About</a>
             <ul>
               <li><a href="company_profile.html">Company Profile</a></li>
               <li><a href="vision-mission.html">Vision and Mission</a></li>
@@ -92,15 +94,17 @@
               <li><a href="clients.html">Our Clients</a></li>
             </ul>
           </li>
-<!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
- -->          <li><a href="index.html#projects">Projects</a>
-<!--            <ul>
+          <!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
+ -->
+          <li><a href="#projects">Our Key Projects</a>
+            <!--            <ul>
               <li><a href="http://www.escubeindia.net/our-projects/">All Projects</a></li>
               <li><a href="http://www.escubeindia.net/completed/">Completed Projects</a></li>
               <li><a href="http://www.escubeindia.net/on-going/">On Going Projects</a></li>
             </ul>
- -->          </li>
-          <li class="drop-down"><a href="index.html#services">Services</a>
+ -->
+          </li>
+          <li class="drop-down"><a href="#services">Services</a>
             <ul>
               <li><a href="hvac-solutions.html">HVAC Solutions</a></li>
               <li><a href="comfort-air-conditioning.html">Comfort Air Conditioning</a></li>
@@ -110,17 +114,26 @@
               <li><a href="industrial-air-conditioning.html">Industrial Application</a></li>
             </ul>
           </li>
-                    <li><a href="#clients">Clients</a></li>
-              <li><a href="index.html#team">Team</a></li>
+          <li class="drop-down"><a href="#services">Gallery</a>
+            <ul>
+              <li><a href="gallery-alibagh.html">Alibagh</a></li>
+              <li><a href="gallery-bhandardara.html">Bhandardara</a></li>
+              <li><a href="gallery-goa.html">Goa</a></li>
+              <li><a href="gallery-udupi.html">Udupi</a></li>
+            </ul>
+          </li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#team">Team</a></li>
 
-          <li><a href="index.html#quality-policy">Quality Policy</a>
+
+          <li><a href="#quality-policy">Quality Policy</a>
           </li>
           <li class="drop-down"><a href="#">Career</a>
             <ul>
               <li><a href="career.html">Submit Resume Form</a></li>
             </ul>
           </li>
-          <li class="drop-down"><a href="index.html#contact">Contact</a>
+          <li class="drop-down"><a href="#contact">Contact</a>
             <ul>
               <li><a href="contact-01.html">General Inquiry & feedback</a></li>
               <li><a href="contact-02.html">Business Inquiry form</a></li>
@@ -131,136 +144,93 @@
       </nav><!-- .nav-menu -->
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero-01" style="height:400px;">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <section id="hero" class="hero-section" style="max-height: 300px;">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-17.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container" style="margin-bottom: 280px;">
-                <h1 class="animate__animated animate__fadeInDown head">Ventilation System</h1>
-                <p class="animate__animated animate__fadeInUp">Industries and Warehouse Air Ventilation System, Car Parking Ventilation System | Escube Airconditioning Pvt Ltd.</p>
-              </div>
-            </div>
+        <!-- Slide 1 -->
+        <div class="swiper-slide" style="background-image: url('assets/img/slide/slide-17.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-content">
+            <h3>Ventilation System</h3>
+            <p>Industries and Warehouse Air Ventilation System, Car Parking Ventilation System | Escube Airconditioning Pvt Ltd.</p>
           </div>
-
-          <!-- Slide 2 -->
-          
-
-          <!-- Slide 3 -->
-          
-
         </div>
 
+        <!-- Slide 2 -->
+
+        <!-- Slide 3 -->
 
       </div>
+
+      <!-- Swiper Controls -->
+      <div class="swiper-pagination" style="color: white;"></div>
+      <div class="swiper-button-next" style="color: white;"></div>
+      <div class="swiper-button-prev" style="color: white;"></div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/services/hvac-solution-01.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-
-            <div class="section-title" id="about">
-              <h2 class="service-havc">Ventilation System</h2>
-
-              <p>We, Escube Airconditioning are an accredited organization engaged in manufacturing a broad array of Ventilation Systems. Offered systems find application in chemical, steel plants, paper, cement, petrochemical plants, plastics and fertilizers industries. To ensure that our offered systems are able to fit the requirements of above named industries, we manufacture these by making use of use of optimum quality raw material. We also follow globally laid quality norms while manufacturing the offered systems.<br><br>
-
-</p>
+<!-- ======= Ventilation System Section ======= -->
+<section id="ventilation-system" class="ventilation-section">
+    <div class="container">
+        <!-- First Row -->
+        <div class="ventilation-row">
+            <div class="ventilation-img-container">
+                <div class="">
+                    <i class="fas fa-wind"></i>
+                </div>
+                <img src="assets/img/services/hvac-solution-01.jpg" class="ventilation-img" alt="Ventilation System">
+                <div class="img-overlay"></div>
             </div>
 
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div> -->
-            
-
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div> -->
-
-          </div>
+            <div class="ventilation-content">
+                <div class="ventilation-header">
+                    <h2 class="ventilation-title">Ventilation System</h2>
+                    <p class="ventilation-description">
+                        We, Escube Airconditioning are an accredited organization engaged in manufacturing a broad array of Ventilation Systems. Offered systems find application in chemical, steel plants, paper, cement, petrochemical plants, plastics and fertilizers industries.
+                    </p>
+                    <p class="ventilation-description">
+                        To ensure that our offered systems are able to fit the requirements of above named industries, we manufacture these by making use of optimum quality raw material. We also follow globally laid quality norms while manufacturing the offered systems.
+                    </p>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
 
-      </div>
-    </section><!-- End About Us Section -->
-    
-    
-
-    <!-- ======= About Lists Section ======= -->
-    
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row no-gutters">
-        <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-          
-          
-          
-          
-          
-          
-          
-
-            <div class="section-title" id="about">
-              <h2 class="service-havc">Ventilation System Includes </h2>
-
-<p>• Warehouse & Factory</p>
-<p>• Ventilation</p>
-<p>• Basement & Car Parking</p><br>
-
+<!-- ======= Ventilation Applications Section ======= -->
+<section id="ventilation-applications" class="ventilation-section light-bg">
+    <div class="container">
+        <!-- Second Row -->
+        <div class="ventilation-row reverse-on-desktop">
+            <div class="ventilation-content">
+                <div class="ventilation-header">
+                    <h2 class="ventilation-title">Ventilation System Includes</h2>
+                    
+                    <div class="applications-grid">
+                        <div class="application-item">Warehouse & Factory Ventilation</div>
+                        <div class="application-item">Basement & Car Parking Ventilation</div>
+                    </div>
+                </div>
             </div>
 
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div> -->
-            
-
-            <!--<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div> -->
-
-          </div>
-        
-        
-        
-        
-        
-        
-        
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/services/hvac-solution-02.jpg" class="img-fluid" alt="">
-          </div>
-
-          
+            <div class="ventilation-img-container">
+                <div class="">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <img src="assets/img/services/hvac-solution-02.jpg" class="ventilation-img" alt="Ventilation Applications">
+                <div class="img-overlay"></div>
+            </div>
         </div>
-
-      </div>
-    </section>
+    </div>
+</section>
     
     
     <!-- End About Lists Section -->
