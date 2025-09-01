@@ -1,86 +1,112 @@
+.about-lists {
+  background: #e6f0fa;
+  padding: 80px 0;
+}
 
-      .about-lists {
-        background: #e6f0fa;
-        padding: 80px 0;
-      }
+/* Card Styling */
+.content-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 320px;
+  border: 1px solid rgba(0, 123, 255, 0.08); /* subtle border */
+  overflow: hidden;
+}
 
-      .content-card {
-        background: #fff;
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        min-height: 320px;
-        /* 🔹 static height */
-      }
+.content-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(135deg, #4CBAEA, #007bff);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
-      .content-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-      }
+.content-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
 
-      .card-number {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #007bff;
-        opacity: 0.15;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-      }
+.content-card:hover::before {
+  opacity: 1;
+}
 
-      .content-card h4 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #1a1a1a;
-        margin-bottom: 15px;
-      }
+/* Number watermark */
+.card-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #007bff;
+  opacity: 0.08;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  pointer-events: none;
+}
 
+/* Title */
+.content-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0C2D47;
+  margin-bottom: 15px;
+}
 
+/* Text */
+.card-text, 
+.card-list {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
 
+/* Read More Button */
+.readmore-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 2px solid #4CBAEA;
+  background: transparent;
+  color: #4CBAEA;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px; /* pill button */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
+.readmore-btn:hover {
+  background: #4CBAEA;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(76, 186, 234, 0.4);
+  transform: translateY(-2px);
+}
 
-      .readmore-btn {
-        padding: 10px 20px;
-        border: 2px solid #4CBAEA;
-        /* proper border */
-        background: transparent;
-        /* no background */
-        color: #4CBAEA;
-        font-weight: 500;
-        text-decoration: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      .readmore-btn:hover {
-        border: 2px solid #4CBAEA;
-        /* stays same */
-        color: #fff;
-        /* stays same */
-        background: #4CBAEA;
-        /* no effect */
-      }
-
-
-      /* ---------- Responsive ---------- */
-      @media (max-width: 768px) {
-        .content-card {
-          min-height: 280px;
-          margin-bottom: 20px;
-        }
-
-        .content-card h4 {
-          font-size: 1.3rem;
-        }
-
-        .card-text,
-        .card-list {
-          font-size: 0.95rem;
-        }
-      }
+/* Responsive */
+@media (max-width: 768px) {
+  .content-card {
+    min-height: 280px;
+    margin-bottom: 20px;
+  }
+  .content-card h4 {
+    font-size: 1.3rem;
+  }
+  .card-text,
+  .card-list {
+    font-size: 0.95rem;
+  }
+}

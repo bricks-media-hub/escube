@@ -1650,7 +1650,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Our Clients
 --------------------------------------------------------------*/
-.clients .clients-item {
+/* .clients .clients-item {
   margin-bottom: 30px;
 }
 
@@ -1757,12 +1757,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 .clients .clients-wrap:hover img {
   transform: scale(1.1);
-}
+} */
 
 /*--------------------------------------------------------------
 # HAVC Solution
 --------------------------------------------------------------*/
-.service-havc {
+/* .service-havc {
     font-size: 28px !important;
 	text-align:left !important;
 	margin-left: 0px !important;
@@ -1773,12 +1773,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     color: #257fab;
     text-transform: uppercase;
 
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.clients-details {
+/* .clients-details {
   padding-top: 30px;
 }
 
@@ -1866,7 +1866,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     position: static;
     margin-top: 30px;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Testimonials

@@ -49,6 +49,12 @@
   ======================================================== -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@700&family=Saira:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="assets/css/Homepage_css/banner.css">
+  <link rel="stylesheet" href="assets/css/Form_css/form.css">
+  <link rel="stylesheet" href="assets/css/Homepage_css/footer.css">
+  <link rel="stylesheet" href="assets/css/Homepage_css/contactUs.css">
   
 </head>
 
@@ -64,8 +70,8 @@
       <div class="social-links float-right">
         <a href="https://twitter.com/Escube_india" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="https://www.facebook.com/escubeindia/" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/escubeindia/" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/escube-airconditioning-pvt-ltd/about/" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="https://www.instagram.com/escubeindia" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/escubeindia" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -75,15 +81,14 @@
     <div class="container">
 
       <div class="logo float-left">
-        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="140" height="84"></span></a></h5>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h5 class="text-light"><a href="index.html"><span><img src="assets/img/logo1.png" width="100"
+                height="60"></span></a></h5>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block" id="home">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="drop-down"><a href="index.html#about">About</a>
+          <li class="drop-down"><a href="#about">About</a>
             <ul>
               <li><a href="company_profile.html">Company Profile</a></li>
               <li><a href="vision-mission.html">Vision and Mission</a></li>
@@ -92,15 +97,17 @@
               <li><a href="clients.html">Our Clients</a></li>
             </ul>
           </li>
-<!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
- -->          <li><a class="section-scroll" href="index.html#projects">Our Key Projects</a>
-<!--            <ul>
+          <!--              <li><a href="http://www.escubeindia.net/team/">Team</a></li>
+ -->
+          <li><a href="#projects">Our Key Projects</a>
+            <!--            <ul>
               <li><a href="http://www.escubeindia.net/our-projects/">All Projects</a></li>
               <li><a href="http://www.escubeindia.net/completed/">Completed Projects</a></li>
               <li><a href="http://www.escubeindia.net/on-going/">On Going Projects</a></li>
             </ul>
- -->          </li>
-          <li class="drop-down"><a href="index.html#services">Services</a>
+ -->
+          </li>
+          <li class="drop-down"><a href="#services">Services</a>
             <ul>
               <li><a href="hvac-solutions.html">HVAC Solutions</a></li>
               <li><a href="comfort-air-conditioning.html">Comfort Air Conditioning</a></li>
@@ -110,8 +117,17 @@
               <li><a href="industrial-air-conditioning.html">Industrial Application</a></li>
             </ul>
           </li>
-                    <li><a href="clients.html">Clients</a></li>
-                    <li><a href="index.html#team">Team</a></li>
+          <li class="drop-down"><a href="#services">Gallery</a>
+            <ul>
+              <li><a href="gallery-alibagh.html">Alibagh</a></li>
+              <li><a href="gallery-bhandardara.html">Bhandardara</a></li>
+              <li><a href="gallery-goa.html">Goa</a></li>
+              <li><a href="gallery-udupi.html">Udupi</a></li>
+            </ul>
+          </li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#team">Team</a></li>
+
 
           <li><a href="#quality-policy">Quality Policy</a>
           </li>
@@ -131,170 +147,249 @@
       </nav><!-- .nav-menu -->
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero-01" style="height:400px;">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <section id="hero" class="hero-section" style="max-height: 300px;">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container" style="margin-bottom: 280px;">
-                <h1 class="animate__animated animate__fadeInDown head">Service Complaints</h1>
-                <p class="animate__animated animate__fadeInUp">We provide innovative HVAC Product Solutions for ambiance solution. Our professional team works to increase productivity and cost effectiveness on the market.</p>
-              </div>
-            </div>
+        <!-- Slide 1 -->
+        <div class="swiper-slide" style="background-image: url('assets/img/slide/slide-1.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-content">
+            <h3>Service Complaints</h3>
+            <p>We provide innovative HVAC Product Solutions for ambiance solution. Our professional team works to increase productivity and cost effectiveness on the market.</p>
           </div>
-
-          <!-- Slide 2 -->
-          
-
-          <!-- Slide 3 -->
-          
-
         </div>
 
+        <!-- Slide 2 -->
+
+        <!-- Slide 3 -->
 
       </div>
-    </div>
-  </section><!-- End Hero -->
 
-  <main id="main">
+      <!-- Swiper Controls -->
+      <div class="swiper-pagination" style="color: white;"></div>
+      <div class="swiper-button-next" style="color: white;"></div>
+      <div class="swiper-button-prev" style="color: white;"></div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+      <main id="main">
 
     <!-- ======= About Us Section ======= -->
     <!-- End About Us Section -->
-    
-    <section  class="contact">
+
+    <section class="contact">
       <div class="container">
 
-        <div class="section-title">
-          <h2 style="color:#44535a;">Feedback and complaints</h2>
-                    <p>Over 20 years experience and knowledge international standards, technologicaly changes our industrial system, we are dedicated to provides the best solutions to our valued customers there are many variations solutions.</p>
-
+        <!-- Section Title -->
+        <div class="section-title text-center">
+          <h4 style="color:#0C2D47;">Feedback and complaints</h4>
+          <p>
+            Over 20 years experience and knowledge international standards, technologicaly changes our industrial system, we are dedicated to provides the best solutions to our valued customers there are many variations solutions.
+          </p>
         </div>
 
+        <!-- Office Info Boxes -->
         <div class="row">
-
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Mumbai Head Office</h3>
-              <p>B2/2, 8th Floor,Building no 1, Ashar IT Park,<br>
-              Wagle Industrial Estate, Thane west – 400604.<br>
-              Tel: 022- 25827851/25827853
- 
-</p>
+          <!-- Mumbai -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up">
+            <div class="info-box clickable-card office-card flexing-center"
+              onclick="openGoogleMap('B2/2, 8th Floor, Building no 1, Ashar IT Park, Wagle Industrial Estate, Thane West – 400604')">
+              <div class="office-header"
+                style="display:flex;flex-direction:column;gap:10px;align-items:center;margin-bottom:15px;">
+                <div class="office-icon"
+                  style="width:50px;height:50px;background:rgba(52,152,219,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:15px;">
+                  <i class="bx bx-map" style="font-size:24px;color:#3498db;"></i>
+                </div>
+                <h3 style="font-size:18px;font-weight:600;margin:0;color:#0C2D47;">Mumbai Head Office</h3>
+              </div>
+              <p style="color:#5F7D9E;line-height:1.6;margin-bottom:15px;">
+                B2/2, 8th Floor, Building no 1, Ashar IT Park,<br>
+                Wagle Industrial Estate, Thane West – 400604.<br>
+                <strong>Tel:</strong> 022-25827851 / 25827853
+              </p>
+              <div class="map-link"
+                style="color:#3498db;font-weight:500;display:flex;align-items:center;margin-top:15px;">
+                <span>View on map</span>
+                <i class="bx bx-chevron-right" style="margin-left:5px;transition:transform .3s ease;"></i>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Bangalore Branch Office</h3>
-              <p>1st floor, No 273, 5th Main, Manjunath Nagar,<br>
-               behind KFC, Rajajinagar, Bangalore 560010<br>
-               Tel: 080-23358988/7338409988
-</p>
+
+          <!-- Bangalore -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up">
+            <div class="info-box clickable-card office-card flexing-center"
+              onclick="openGoogleMap('1st floor, No 273, 5th Main, Manjunath Nagar, behind KFC, Rajajinagar, Bangalore 560010')">
+              <div class="office-header"
+                style="display:flex;flex-direction:column;gap:10px;align-items:center;margin-bottom:15px;">
+                <div class="office-icon"
+                  style="width:50px;height:50px;background:rgba(52,152,219,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:15px;">
+                  <i class="bx bx-map" style="font-size:24px;color:#3498db;"></i>
+                </div>
+                <h3 style="font-size:18px;font-weight:600;margin:0;color:#0C2D47;">Bangalore Branch Office</h3>
+              </div>
+              <p style="color:#5F7D9E;line-height:1.6;margin-bottom:15px;">
+                1st floor, No 273, 5th Main, Manjunath Nagar,<br>
+                behind KFC, Rajajinagar, Bangalore 560010<br>
+                <strong>Tel:</strong> 080-23358988 / 7338409988
+              </p>
+              <div class="map-link"
+                style="color:#3498db;font-weight:500;display:flex;align-items:center;margin-top:15px;">
+                <span>View on map</span>
+                <i class="bx bx-chevron-right" style="margin-left:5px;transition:transform .3s ease;"></i>
+              </div>
             </div>
           </div>
 
-          
-
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Udupi Branch Office </h3>
-              <p>Escube Air-conditioning Pvt Ltd, 2nd floor,<br>
+          <!-- Udupi -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up">
+            <div class="info-box clickable-card office-card flexing-center"
+              onclick="openGoogleMap('Escube Air-conditioning Pvt Ltd, 2nd floor, Vadiraj Complex near Mitra Hospital, Udupi - 576101')">
+              <div class="office-header"
+                style="display:flex;flex-direction:column;gap:10px;align-items:center;margin-bottom:15px;">
+                <div class="office-icon"
+                  style="width:50px;height:50px;background:rgba(52,152,219,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:15px;">
+                  <i class="bx bx-map" style="font-size:24px;color:#3498db;"></i>
+                </div>
+                <h3 style="font-size:18px;font-weight:600;margin:0;color:#0C2D47;">Udupi Branch Office</h3>
+              </div>
+              <p style="color:#5F7D9E;line-height:1.6;margin-bottom:15px;">
+                Escube Air-conditioning Pvt Ltd, 2nd floor,<br>
                 Vadiraj Complex near Mitra Hospital,<br>
-                Udupi - 576101 <br>
-                Tel: 9322060767
-</p>
-            </div>
-          </div>
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Mangalore Branch Office</h3>
-              <p>2-16-1404/3, Akshata, 1st floor,<br> Pragathi Colony,
-               near Bharath Mall, Bejai,<br>
-               Mangalore – 575004. <br>
-               Tel: 9322060767
-</p>
-            </div>
-          </div>
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Goa Branch Office</h3>
-              <p>112,2nd Floor ,Block 1 ,<br>
-                Karma Gardens, Next to Regina Mundi School,<br>
-                Near S,M,R,C, Chicalim, Goa - 403711. <br>
-                Tel No: 91 9321087430
-</p>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="info-box">
-              <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>info@escubeindia.net<br>We reply within 24 hours</p>
+                Udupi - 576101<br>
+                <strong>Tel:</strong> 9322060767
+              </p>
+              <div class="map-link"
+                style="color:#3498db;font-weight:500;display:flex;align-items:center;margin-top:15px;">
+                <span>View on map</span>
+                <i class="bx bx-chevron-right" style="margin-left:5px;transition:transform .3s ease;"></i>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms-new/contactus.php" method="post" class="php-email-form">
-              <div class="form-row">
-                <div class="col-lg-12 form-group">
-                  <!--<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />-->				  
-                  <div class="validate"></div>
-				  <input class="form-control" name="NAME" required="" type="text" placeholder="Your Name">
+          <!-- Mangalore -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up">
+            <div class="info-box clickable-card office-card flexing-center"
+              onclick="openGoogleMap('2-16-1404/3, Akshata, 1st floor, Pragathi Colony, near Bharath Mall, Bejai, Mangalore – 575004')">
+              <div class="office-header"
+                style="display:flex;flex-direction:column;gap:10px;align-items:center;margin-bottom:15px;">
+                <div class="office-icon"
+                  style="width:50px;height:50px;background:rgba(52,152,219,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:15px;">
+                  <i class="bx bx-map" style="font-size:24px;color:#3498db;"></i>
                 </div>
-                <div class="col-lg-6 form-group">
-                  <!--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />-->
-                  <div class="validate"></div>
-				  <input class="form-control" name="EMAIL" required="" type="email" placeholder="Your Email">
-                </div>
-                <div class="col-lg-6 form-group">
-                  <!--<input type="mobile" class="form-control" name="mobile" id="email" placeholder="Your Mobile Number" data-rule="mobile" data-msg="Please enter a valid mobile" />-->
-                  <div class="validate"></div>
-				  <input class="form-control" name="MOBILE" title="Your Mobile Number" required="" type="text" pattern="[0-9]{10}" placeholder="Your Mobile Number">
-                </div>
+                <h3 style="font-size:18px;font-weight:600;margin:0;color:#0C2D47;">Mangalore Branch Office</h3>
               </div>
-              <div class="form-group">
-                <!--<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />-->
+              <p style="color:#5F7D9E;line-height:1.6;margin-bottom:15px;">
+                2-16-1404/3, Akshata, 1st floor, Pragathi Colony,<br>
+                near Bharath Mall, Bejai, Mangalore – 575004.<br>
+                <strong>Tel:</strong> 9322060767
+              </p>
+              <div class="map-link"
+                style="color:#3498db;font-weight:500;display:flex;align-items:center;margin-top:15px;">
+                <span>View on map</span>
+                <i class="bx bx-chevron-right" style="margin-left:5px;transition:transform .3s ease;"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Goa -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up">
+            <div class="info-box clickable-card office-card flexing-center"
+              onclick="openGoogleMap('No BS 6, 2nd Floor, Campal Trade Centre, Opp : Hotel Taj Vivanta, Panjim, Goa - 403001')">
+              <div class="office-header"
+                style="display:flex;flex-direction:column;gap:10px;align-items:center;margin-bottom:15px;">
+                <div class="office-icon"
+                  style="width:50px;height:50px;background:rgba(52,152,219,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:15px;">
+                  <i class="bx bx-map" style="font-size:24px;color:#3498db;"></i>
+                </div>
+                <h3 style="font-size:18px;font-weight:600;margin:0;color:#0C2D47;">Goa Branch Office</h3>
+              </div>
+              <p style="color:#5F7D9E;line-height:1.6;margin-bottom:15px;">
+                No BS 6, 2nd Floor, Campal Trade Centre,<br>
+                Opp : Hotel Taj Vivanta, Panjim, Goa - 403001<br>
+                <strong>Tel:</strong> 9321087430
+              </p>
+              <div class="map-link"
+                style="color:#3498db;font-weight:500;display:flex;align-items:center;margin-top:15px;">
+                <span>View on map</span>
+                <i class="bx bx-chevron-right" style="margin-left:5px;transition:transform .3s ease;"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email (no map) -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box clickable-card office-card flexing-center">
+              <div class="office-header"
+                style="display:flex;flex-direction:column;gap:10px;align-items:center;margin-bottom:15px;">
+                <div class="office-icon"
+                  style="width:50px;height:50px;background:rgba(52,152,219,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:15px;">
+                  <i class="bx bx-envelope" style="font-size:24px;color:#3498db;"></i>
+                </div>
+                <h3 style="font-size:18px;font-weight:600;margin:0;color:#0C2D47;">Email Us</h3>
+              </div>
+              <p style="color:#5F7D9E;line-height:1.6;margin-bottom:15px;">
+                info@escubeindia.net<br>We reply within 24 hours
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+          <form action="forms-new/contactus.php" method="post" class="php-email-form">
+            <div class="form-row">
+              <div class="col-lg-12 form-group">
+                <!--<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />-->
                 <div class="validate"></div>
-				<input class="form-control" name="SUBJECT" type="text" placeholder="Subject">
+                <input class="form-control" name="NAME" required="" type="text" placeholder="Your Name">
               </div>
-              <div class="form-group">
-                <!--<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>-->
+              <div class="col-lg-6 form-group">
+                <!--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />-->
                 <div class="validate"></div>
-				<textarea class="form-control" name="Message" rows="5" cols="30" placeholder="Message"></textarea>
+                <input class="form-control" name="EMAIL" required="" type="email" placeholder="Your Email">
               </div>
-			  <div class="form-row">
-			  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
-				<input id="txtCompare" class="form-control" name="captcha" type="text" placeholder="Verification code" required="">	
-			  </div>
-			  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
-				<div id="imgdiv"><img id="img" src="forms-new/captcha.php"></div>
-				<img id="reload" src="forms-new/js/reload.png">     
-			  </div>
-			  </div>
-              <!--<div class="mb-3">
+              <div class="col-lg-6 form-group">
+                <!--<input type="mobile" class="form-control" name="mobile" id="email" placeholder="Your Mobile Number" data-rule="mobile" data-msg="Please enter a valid mobile" />-->
+                <div class="validate"></div>
+                <input class="form-control" name="MOBILE" title="Your Mobile Number" required="" type="text"
+                  pattern="[0-9]{10}" placeholder="Your Mobile Number">
+              </div>
+            </div>
+            <div class="form-group">
+              <!--<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />-->
+              <div class="validate"></div>
+              <input class="form-control" name="SUBJECT" type="text" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <!--<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>-->
+              <div class="validate"></div>
+              <textarea class="form-control" name="Message" rows="5" cols="30" placeholder="Message"></textarea>
+            </div>
+            <div class="form-row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
+                <input id="txtCompare" class="form-control" name="captcha" type="text" placeholder="Verification code"
+                  required="">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
+                <div id="imgdiv"><img id="img" src="forms-new/captcha.php"></div>
+                <img id="reload" src="forms-new/js/reload.png">
+              </div>
+            </div>
+            <!--<div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>-->
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
         </div>
+
+      </div>
 
       </div>
     </section>
@@ -307,25 +402,25 @@
 
     <!-- ======= Services Section ======= -->
     <!-- End Services Section -->
-    
+
     <!-- ======= Testimonials Section ======= -->
 
-    
+
     <!-- ======= Testimonials Section End ======= -->
-    
+
     <!-- ======= Our Portfolio Section ======= -->
     <!-- End Our Portfolio Section -->
-    
-<!---clients scroll start-->
 
-    
-<!--- clients scroll end -->
-    
+    <!---clients scroll start-->
+
+
+    <!--- clients scroll end -->
+
     <!---clients start-->
-    
 
 
-  <!---clients end-->
+
+    <!---clients end-->
 
     <!-- ======= Our Team Section ======= -->
     <!-- End Our Team Section -->
@@ -449,7 +544,7 @@
   
   <!-- clients scroll end -->
   
-  
+      <script src="assets/js/Homepage_js/contactUs.js"></script>
 
 
 </body>
