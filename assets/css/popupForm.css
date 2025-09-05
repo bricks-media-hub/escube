@@ -1,0 +1,68 @@
+
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10005;
+  padding: 15px;
+}
+
+.popup-content {
+  position: relative;
+  width: 100%;
+  max-width: 600px;   /* a bit narrower */
+  border-radius: 12px;
+  animation: fadeInUp 0.4s ease;
+  padding: 25px 20px; /* reduced padding */
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s ease;
+}
+.close-btn:hover { color: #000; }
+
+/* Inputs styling */
+.popup-content .form-control {
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Button */
+.popup-content button {
+  padding: 10px 25px;
+  font-size: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Responsive: stack fields nicely */
+@media (max-width: 768px) {
+  .popup-content {
+    max-width: 95%;
+    padding: 20px 15px;
+  }
+  .popup-content h3 {
+    font-size: 18px;
+  }
+  .popup-content .form-control {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .popup-content button {
+    font-size: 14px;
+    padding: 9px 20px;
+  }
+}
