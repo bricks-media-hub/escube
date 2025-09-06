@@ -50,7 +50,7 @@
 
 
   <link rel="stylesheet" href="assets/css/team-carousel.css" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!--  Team scroll  -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
@@ -446,7 +446,7 @@
 
 
 
-<!-- ======= Counts Section ======= -->
+    <!-- ======= Counts Section ======= -->
     <section class="counts section-bg">
       <div class="container">
         <div class="row">
@@ -496,7 +496,7 @@
     <!-- End Counts Section -->
 
 
-<!-- ======= Services Section ======= -->
+    <!-- ======= Services Section ======= -->
     <section class="services">
       <div class="container">
         <div class="section-header">
@@ -640,133 +640,198 @@
 
 
 
-
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+<!-- Swiper CSS -->
+
+
+<section id="testimonials" class="testimonials">
+  <div class="container" data-aos="zoom-in">
+
+    <!-- Swiper wrapper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="click-view">
+
+        <div class="swiper-slide testimonial-item">
+          <img src="assets/img/appriciation/1.jpg" class="testimonial-img-small" alt="Appreciation Letter 1">
+        </div>
+
+        <div class="swiper-slide testimonial-item" data-img="assets/img/appriciation/2.jpg" >
+          <img src="assets/img/appriciation/2.jpg" class="testimonial-img-small" alt="Appreciation Letter 2">
+        </div>
+
+        <div class="swiper-slide testimonial-item" data-img="assets/img/appriciation/3.jpg">
+          <img src="assets/img/appriciation/3.jpg" class="testimonial-img-small" alt="Appreciation Letter 3">
+        </div>
+
+        <div class="swiper-slide testimonial-item" data-img="assets/img/appriciation/3.jpg">
+          <img src="assets/img/appriciation/4.jpg" class="testimonial-img-small" alt="Appreciation Letter 4">
+        </div>
+
+        <div class="swiper-slide testimonial-item" data-img="assets/img/appriciation/3.jpg">
+          <img src="assets/img/appriciation/5.jpg" class="testimonial-img-small" alt="Appreciation Letter 5">
+        </div>
+
+        <div class="swiper-slide testimonial-item" data-img="assets/img/appriciation/3.jpg">
+          <img src="assets/img/appriciation/6.jpg" class="testimonial-img-small" alt="Appreciation Letter 6">
+        </div>
+
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Styles -->
+<style>
+.testimonial-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.testimonial-img-small {
+  width: 100%;
+  max-width: 250px; /* control image size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+</style>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 15,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
+</script>
+
+<!-- Lightbox -->
+<div class="lightbox-t">
+  <span class="lightbox-close-t">&times;</span>
+  <div class="lightbox-content-t">
+    <img src="" alt="Lightbox Image">
+  </div>
+</div>
+
+<style>
+/* Backdrop */
+.lightbox-t {
+  display: none; /* set to flex when open */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content */
+.lightbox-content-t img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* Close button */
+.lightbox-close-t {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+}
+.lightbox-close-t:hover {
+  color: #aaa;
+}
+</style>
+
+
+<!-- ======= Testimonials Section End ======= -->
+
+
+    <!-- Perfect one -->
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <section id="testimonials" class="testimonials">
       <div class="container" data-aos="zoom-in">
 
         <div class="owl-carousel testimonials-carousel">
 
           <div class="testimonial-item">
-            <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">-->
-            <h3>Infosys foundation</h3>
-            <h4>Chairperson, Infosys foundation </h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              You have reason to the challenges in ensuring that the work is completed in a time-bound manner for which
-              we are grateful. we are truly inspired by your commitment in making a difference during these
-              unprecedented and challenging times of the COVID-19 pandemic.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
+            <img src="assets/img/appriciation/1.jpg" class="testimonial-img-full" alt="Appreciation Letter 1">
           </div>
 
           <div class="testimonial-item">
-            <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">-->
-            <h3>Infosys Science foundation</h3>
-            <h4>General Manager, Infosys foundation </h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Thank you for the quality of service provided by your company. We sincerely appreciate your efficient
-              gracious customer service, and the level of detail and accountability you have demonstrated on this
-              project we have and will continue to recommend and endorse your services. Our team could not be more
-              satisfied with your work and we look forward to continuing this relationship
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
+            <img src="assets/img/appriciation/2.jpg" class="testimonial-img-full" alt="Appreciation Letter 2">
           </div>
 
           <div class="testimonial-item">
-            <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">-->
-            <h3>Akshaya Patra</h3>
-            <h4></h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Escube India team have worked tirelessly for the completion of industrial kitchen ventilation works at our
-              organization and delivered the project on time. we appreciate your efficient gracious support and
-              excellent work. Will continue to recommend your services in another branch Akshay Patra foundation in
-              India all the best for a future endeavors
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
+            <img src="assets/img/appriciation/3.jpg" class="testimonial-img-full" alt="Appreciation Letter 3">
           </div>
 
           <div class="testimonial-item">
-            <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">-->
-            <h3>Godrej</h3>
-            <h4>CEO, Godrej </h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              For out standing commitment – field quality & safety.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
+            <img src="assets/img/appriciation/4.jpg" class="testimonial-img-full" alt="Appreciation Letter 4">
           </div>
 
           <div class="testimonial-item">
-            <!--<img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">-->
-            <h3>Kanakia</h3>
-            <h4>CEO, Kanakia </h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Escube Air conditioning Pvt. Ltd. successfully completed supply, installation Testing & commissioning.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
+            <img src="assets/img/appriciation/5.jpg" class="testimonial-img-full" alt="Appreciation Letter 5">
           </div>
 
           <div class="testimonial-item">
-            <!--<img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">-->
-            <h3>Fame (I) Limited</h3>
-            <h4>CEO, Fame (I) Limited </h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              We are pleased to put on record, good quality of work executed by Escube Airconditioning Pvt Ltd has
-              installed and successfully commissoned Air Condition System.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
+            <img src="assets/img/appriciation/6.jpg" class="testimonial-img-full" alt="Appreciation Letter 6">
           </div>
-
-          <div class="testimonial-item">
-            <!--<img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">-->
-            <h3>Daikin</h3>
-            <h4>CEO, Dailin </h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Escube Airconditioning Pvt. Ltd. for providing air conditioning solution to our valued customers.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <!--<img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">-->
-            <h3>KPIT</h3>
-            <h4>CEO, KPIT </h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              You played a key role in helping us make KPIT, Mahape office stand out.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <!--<img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">-->
-            <h3>Thithe Valuers, Lower parel</h3>
-            <h4>Siddharth Thite </h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              We appointed Escube for HVAC work of our office at Lower Parel. Team Escube completed the work in timely
-              and professional manner and also in the reasonable cost. at our office we had limited tonnage of AC given
-              by the builder, but designers at Escube designed the efficient system and completed the project in timely
-              manner with required efficiency. Now we are using the same system over 3 months now and there is no issues
-              due to less tonnage as compared to normal. This efficient design helped us to reduce the power costs by
-              almost 50% - 60%.
-              I would recommend Escube Air Conditioning if you are looking for Professional, Experienced and Innovative
-              agency.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
 
         </div>
         <span id="projects"></span>
       </div>
-    </section>
+      <style>
+        .testimonial-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .testimonial-img-full {
+          width: 100%;
+          max-width: 600px;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+      </style>
+    </section> -->
     <!-- ======= Testimonials Section End ======= -->
 
 
@@ -1763,7 +1828,7 @@
           <!-- Mumbai Office -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up">
             <div class="info-box clickable-card office-card flexing-center"
-              onclick="openGoogleMap('B2/2, 8th Floor,Building no 1, Ashar IT Park, Wagle Industrial Estate, Thane west – 400604')">
+              data-map="https://www.google.com/maps/place/Escube+Air+conditioning+Pvt.+Ltd/@19.1981924,72.9532806,684m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3be7b9466c1cc215:0x2be7e2b480ab994c!8m2!3d19.1981924!4d72.9532806!16s%2Fg%2F1tvt8tly!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D">
               <div class="office-header"
                 style="display: flex; flex-direction: column; gap: 10px; align-items: center; margin-bottom: 15px;">
                 <div class="office-icon"
@@ -1773,9 +1838,9 @@
                 <h3 style="font-size: 18px; font-weight: 600; margin: 0; color: #0C2D47;">Mumbai Head Office</h3>
               </div>
               <p style="color: #5F7D9E; line-height: 1.6; margin-bottom: 15px;">
-                B2/2, 8th Floor,Building no 1, Ashar IT Park,<br>
-                Wagle Industrial Estate, Thane west – 400604.<br>
-                <strong>Tel:</strong> 022- 25827851/25827853
+                B2/2, 8th Floor, Building No. 1, Ashar IT Park, Wagle Industrial Estate, Thane West, Thane, Maharashtra
+                400604 <br>
+                <strong>Tel:</strong> 02225827853
               </p>
               <div class="map-link"
                 style="color: #3498db; font-weight: 500; display: flex; align-items: center; margin-top: 15px;">
@@ -1788,7 +1853,7 @@
           <!-- Bangalore Office -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up" data-aos-delay="100">
             <div class="info-box clickable-card office-card flexing-center"
-              onclick="openGoogleMap('1st floor, No 273, 5th Main, Manjunath Nagar, behind KFC, Rajajinagar, Bangalore 560010')">
+              data-map="https://www.google.com/maps/place/Escube+Air+Conditioning+PVT.+LTD./@12.9922638,77.5350016,706m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bae3d90f025810b:0x303d4bd025d7b073!8m2!3d12.9922638!4d77.5350016!16s%2Fg%2F11fy8_h93v!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D">
               <div class="office-header"
                 style="display: flex; flex-direction: column; gap: 10px; align-items: center; margin-bottom: 15px;">
                 <div class="office-icon"
@@ -1798,9 +1863,9 @@
                 <h3 style="font-size: 18px; font-weight: 600; margin: 0; color: #0C2D47;">Bangalore Branch Office</h3>
               </div>
               <p style="color: #5F7D9E; line-height: 1.6; margin-bottom: 15px;">
-                1st floor, No 273, 5th Main, Manjunath Nagar,<br>
-                behind KFC, Rajajinagar, Bangalore 560010<br>
-                <strong>Tel:</strong> 080-23358988/7338409988
+                3, 8th Main Rd, Sharada Colony, Shakthi Ganapathi Nagar, Basaveshwar Nagar, Bengaluru, Karnataka
+                560079<br>
+                <strong>Tel:</strong> 08023358988
               </p>
               <div class="map-link"
                 style="color: #3498db; font-weight: 500; display: flex; align-items: center; margin-top: 15px;">
@@ -1813,7 +1878,7 @@
           <!-- Udupi Office -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up" data-aos-delay="200">
             <div class="info-box clickable-card office-card flexing-center"
-              onclick="openGoogleMap('Escube Air-conditioning Pvt Ltd, 2nd floor, Vadiraj Complex near Mitra Hospital, Udupi - 576101')">
+              data-map="https://www.google.com/maps/place/Escube+Airconditioning+Pvt.+Ltd.,Daikin+plaza/@13.3367647,74.7197131,15z/data=!4m7!3m6!1s0x3bbcbb97941096df:0x163b99748250ad45!8m2!3d13.3367647!4d74.7361926!15sCiRFc2N1YmUgYWlyY29uZGl0aW9uaW5nIHB2dCBsdGQgVWR1cGmSARFlbGVjdHJvbmljc19zdG9yZeABAA!16s%2Fg%2F11l799xknk?authuser=3&entry=tts&g_ep=EgoyMDI0MDgyOC4wKgBIAVAD">
               <div class="office-header"
                 style="display: flex; flex-direction: column; gap: 10px; align-items: center; margin-bottom: 15px;">
                 <div class="office-icon"
@@ -1823,9 +1888,7 @@
                 <h3 style="font-size: 18px; font-weight: 600; margin: 0; color: #0C2D47;">Udupi Branch Office</h3>
               </div>
               <p style="color: #5F7D9E; line-height: 1.6; margin-bottom: 15px;">
-                Escube Air-conditioning Pvt Ltd, 2nd floor,<br>
-                Vadiraj Complex near Mitra Hospital,<br>
-                Udupi - 576101 <br>
+                8PPP+PF4, Ambalpadi, Udupi, Karnataka 576103 <br>
                 <strong>Tel:</strong> 09322060767
               </p>
               <div class="map-link"
@@ -1836,23 +1899,21 @@
             </div>
           </div>
 
-          <!-- Hospet Office -->
+          <!-- Pune Office -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up" data-aos-delay="300">
             <div class="info-box clickable-card office-card flexing-center"
-              onclick="openGoogleMap('Escube Airconditioning pvt Ltd, 1st floor, Near BSNL office, MJ Nagar, Hosapete Tq, Bellamy District, Karnataka - 583201')">
+              data-map="https://www.google.com/maps/place/Escube+Airconditioning+Pvt.+Ltd.+Pune+Branch/@18.5038846,73.8060604,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf001150cfd3:0x14c7de77009cda7a!8m2!3d18.5038846!4d73.8060604!16s%2Fg%2F11wpy9mc7n?q=Escube+Airconditioning+Pvt.+Ltd.+Pune+Branch,+Omkar+Puram+Complex,+Shastri+Nagar+Rd,+Shree+Colony,+Azad+Nagar,+Kothrud,+Pune,+Maharashtra+411058&ftid=0x3bc2bf001150cfd3:0x14c7de77009cda7a&lucs=,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_st=iw&entry=tts&g_ep=EgoyMDI0MTAyMy4wIPu8ASoASAFQAw%3D%3D">
               <div class="office-header"
                 style="display: flex; flex-direction: column; gap: 10px; align-items: center; margin-bottom: 15px;">
                 <div class="office-icon"
                   style="width: 50px; height: 50px; background: rgba(52, 152, 219, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
                   <i class="bx bx-map" style="font-size: 24px; color: #3498db;"></i>
                 </div>
-                <h3 style="font-size: 18px; font-weight: 600; margin: 0; color: #0C2D47;">Hospet Branch Office</h3>
+                <h3 style="font-size: 18px; font-weight: 600; margin: 0; color: #0C2D47;">Pune Branch Office</h3>
               </div>
               <p style="color: #5F7D9E; line-height: 1.6; margin-bottom: 15px;">
-                Escube Airconditioning pvt Ltd, 1st floor,<br>
-                Near BSNL office, MJ Nagar, Hosapete Tq,<br>
-                Bellamy District, Karnataka - 583201 <br>
-                <strong>Tel:</strong> 09322060767
+                Omkar Puram Complex, Shastri Nagar Rd, Shree Colony, Azad Nagar, Kothrud, Pune, Maharashtra 411038 <br>
+                <strong>Tel:</strong> 09321087430
               </p>
               <div class="map-link"
                 style="color: #3498db; font-weight: 500; display: flex; align-items: center; margin-top: 15px;">
@@ -1865,7 +1926,7 @@
           <!-- Goa Office -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up" data-aos-delay="400">
             <div class="info-box clickable-card office-card flexing-center"
-              onclick="openGoogleMap('No BS 6. 2nd Floor, Campal Trade Centre, Opp : Hotel Taj Vivanta, Panjim. Goa - 403001')">
+              data-map="https://www.google.com/maps/place/Campal+Trade+Centre/@15.4935021,73.8112266,2791m/data=!3m1!1e3!4m6!3m5!1s0x3bbfc08d4527b8cb:0x91abe6b948e39ecb!8m2!3d15.4936087!4d73.8193109!16s%2Fg%2F1tf1962t!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D">
               <div class="office-header"
                 style="display: flex; flex-direction: column; gap: 10px; align-items: center; margin-bottom: 15px;">
                 <div class="office-icon"
@@ -1875,10 +1936,8 @@
                 <h3 style="font-size: 18px; font-weight: 600; margin: 0; color: #0C2D47;">Goa Branch Office</h3>
               </div>
               <p style="color: #5F7D9E; line-height: 1.6; margin-bottom: 15px;">
-                Escube Goa. <br>
-                No BS 6. 2nd Floor, Campal Trade Centre,<br>
-                Opp : Hotel Taj Vivanta, Panjim. Goa - 403001<br>
-                <strong>Tel:</strong> 09321087430
+                FRV9+CPV, near Vi - Vodafone Idea Store, Greenland Colony, Santa Inez, Panaji, Goa 403001 <br>
+                <!-- <strong>Tel:</strong> 09321087430 -->
               </p>
               <div class="map-link"
                 style="color: #3498db; font-weight: 500; display: flex; align-items: center; margin-top: 15px;">
@@ -1889,7 +1948,7 @@
           </div>
 
           <!-- Hubli Office -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up" data-aos-delay="500">
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch cgap" data-aos="fade-up" data-aos-delay="500">
             <div class="info-box clickable-card office-card flexing-center"
               onclick="openGoogleMap('T-5,Silver Residency, Opp : Nalanda College,Akshaya Colony,Vidyanagar hubli- 580021')">
               <div class="office-header"
@@ -1912,7 +1971,7 @@
                 <i class="bx bx-chevron-right" style="margin-left: 5px; transition: transform 0.3s ease;"></i>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <!-- Contact Form -->
