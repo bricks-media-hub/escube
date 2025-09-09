@@ -98,6 +98,11 @@
           cursor: pointer;
         }
 
+        .img-size{
+          max-height: 150px;
+          max-width: 150px;
+        }
+
         .client-card::before {
           content: '';
           position: absolute;
